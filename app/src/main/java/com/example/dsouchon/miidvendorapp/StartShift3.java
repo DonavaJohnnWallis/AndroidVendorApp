@@ -156,6 +156,43 @@ public class StartShift3 extends AppCompatActivity {
 
 
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        switch (item.getItemId()) {
+            // action with ID action_refresh was selected
+            case R.id.action_settings:
+                Toast.makeText(this, "Settings selected", Toast.LENGTH_SHORT)
+                        .show();
+                break;
+            // action with ID action_settings was selected
+            case R.id.action_vendorLogin:
+                //Toast.makeText(this, "Login selected", Toast.LENGTH_SHORT)
+
+                //      .show();
+                Intent intent1 = new Intent(StartShift3.this, MainActivity.class );
+                startActivity(intent1);
+                break;
+
+            default:
+                break;
+        }
+
+        return true;
+
+        //return super.onOptionsItemSelected(item);
+    }
 
 
 

@@ -70,7 +70,7 @@
         android:id="@+id/textView"
         android:layout_below="@+id/btn0"
         android:layout_centerHorizontal="true"
-        android:text="3"
+        android:hint="Amount"
         android:textStyle="bold"
         android:layout_weight="30" />
 
@@ -88,8 +88,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="50"
-        android:gravity="center_horizontal"
-        >
+        android:gravity="center_horizontal">
 
 
     <Button

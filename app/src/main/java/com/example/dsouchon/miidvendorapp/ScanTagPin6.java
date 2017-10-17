@@ -69,7 +69,7 @@ public class ScanTagPin6 extends AppCompatActivity {
 
         }
         catch (Exception e) {
-            e.printStackTrace();
+           // e.printStackTrace();
         }
     }
     @Override
@@ -111,9 +111,9 @@ public class ScanTagPin6 extends AppCompatActivity {
 
         final EditText editTagPin = (EditText)findViewById(R.id.editTagPin);
         try {
-            if(Integer.parseInt(editTagPin.getText().toString())>0) {
+
                 editTagPin.setText(editTagPin.getText() + "0");
-            }
+
 
         } catch (Exception ex) {
         }
@@ -316,7 +316,7 @@ public class ScanTagPin6 extends AppCompatActivity {
         protected void onPostExecute(String result) {
 
             if(result.toString().contains("|")) {
-                Intent intent = new Intent(ScanTagPin6.this, PaymentResult7NoPin.class );
+                Intent intent = new Intent(ScanTagPin6.this, PaymentResult7.class );
                 Bundle bundle = new Bundle();
                 bundle.putString("PaymentResult", result);
 
@@ -413,15 +413,13 @@ public class ScanTagPin6 extends AppCompatActivity {
 
             final GlobalClass globalVariable = (GlobalClass) getApplicationContext();
 
-            //EditText editTagPin = (EditText)findViewById(R.id.editTagPin);
+            EditText editTagPin = (EditText)findViewById(R.id.editTagPin);
             EditText editTagNumber = (EditText)findViewById(R.id.editTagNumber);
-            //String sPin = editTagPin.getText().toString();
-            // if (sPin.matches("")) {
-                // Toast.makeText(this, "You did not enter a PIN", Toast.LENGTH_SHORT).show();
-                // return;
-
-
-            // }
+            String sPin = editTagPin.getText().toString();
+            if (sPin.matches("")) {
+                Toast.makeText(this, "You did not enter a PIN", Toast.LENGTH_SHORT).show();
+                return;
+            }
 
 
 
@@ -429,7 +427,7 @@ public class ScanTagPin6 extends AppCompatActivity {
             String TenderAmount = Local.read(this.getApplicationContext(), "TenderAmount");
 
             //get values from controls
-            Integer PinNumber = 0;//Integer.parseInt(editTagPin.getText().toString());
+            Integer PinNumber = Integer.parseInt(editTagPin.getText().toString());
             String TagNumber = editTagNumber.getText().toString();
             if(editTagNumber.getText().toString().equals("")) {
                 TagNumber = Local.Get(getApplicationContext(), "TagNo");
@@ -442,17 +440,17 @@ public class ScanTagPin6 extends AppCompatActivity {
             Integer StaffID= Integer.parseInt(Local.read(this.getApplicationContext(), "StaffID"));
             Integer ShiftNo= Integer.parseInt(Local.read(this.getApplicationContext(), "ShiftNo"));
 
-            PaymentResult7NoPinParameters params = new PaymentResult7NoPinParameters (cs, PinNumber, TagNumber, Amount, EventID, VendorID, DeviceCode, StaffID, ShiftNo);
+            PaymentResult7Parameters params = new PaymentResult7Parameters (cs, PinNumber, TagNumber, Amount, EventID, VendorID, DeviceCode, StaffID, ShiftNo);
 
-            new CallSoapPaymentResult7NoPin().execute(params);
+            new CallSoapPaymentResult7().execute(params);
 
         } catch (Exception ex) {
-            ad.setTitle("Set Event Error!");
-            ad.setMessage(ex.toString());
+          //  ad.setTitle("Set Event Error!");
+          //  ad.setMessage(ex.toString());
 
 
         }
-        ad.show();
+      //  ad.show();
 
 
 
@@ -461,14 +459,14 @@ public class ScanTagPin6 extends AppCompatActivity {
 
 
     //Webmethod functions start
-    public class CallSoapPaymentResult7NoPin extends AsyncTask<PaymentResult7NoPinParameters, Void, String> {
+    public class CallSoapPaymentResult7 extends AsyncTask<PaymentResult7Parameters, Void, String> {
 
         private Exception exception;
 
         //After the webmethod is called
         @Override
-        protected String doInBackground(PaymentResult7NoPinParameters... params) {
-            return params[0].sca.PaymentResult7NoPin(params[0].PinNumber, params[0].TagNumber, params[0].Amount, params[0].EventID, params[0].VendorID, params[0].DeviceCode, params[0].StaffID, params[0].ShiftNo);
+        protected String doInBackground(PaymentResult7Parameters... params) {
+            return params[0].sca.PaymentResult7(params[0].PinNumber, params[0].TagNumber, params[0].Amount, params[0].EventID, params[0].VendorID, params[0].DeviceCode, params[0].StaffID, params[0].ShiftNo);
         }
 
         //After the webmethod has run
@@ -487,7 +485,7 @@ public class ScanTagPin6 extends AppCompatActivity {
 
             }
             else {
-                //Do nothing
+
                 try {
                     Local.write(getApplicationContext(), "PaymentResult", result);
                 } catch (IOException e) {
@@ -496,6 +494,11 @@ public class ScanTagPin6 extends AppCompatActivity {
                 Intent intent = new Intent(ScanTagPin6.this, PaymentResult7.class );
                 finish();
                 startActivity(intent);
+                //Do nothing
+
+               // this was here orginaly.. .
+                // Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
+                //changed it to show message on next screen
 
             }
 
@@ -504,7 +507,7 @@ public class ScanTagPin6 extends AppCompatActivity {
     }
 
 
-    private static class PaymentResult7NoPinParameters {
+    private static class PaymentResult7Parameters {
         MySOAPCallActivity sca;
         Integer PinNumber;
         String TagNumber;
@@ -515,7 +518,7 @@ public class ScanTagPin6 extends AppCompatActivity {
         Integer StaffID;
         Integer ShiftNo;
 
-        PaymentResult7NoPinParameters(MySOAPCallActivity sca,   Integer PinNumber, String TagNumber,
+        PaymentResult7Parameters(MySOAPCallActivity sca,   Integer PinNumber, String TagNumber,
                                  Integer Amount,
                                  Integer EventID,
                                  Integer VendorID,
@@ -652,8 +655,6 @@ public class ScanTagPin6 extends AppCompatActivity {
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
         IntentFilter[] intentFilters = new IntentFilter[] {};
         nfcAdapter.enableForegroundDispatch(this, pendingIntent, intentFilters, null);
-
-
     }
 
     private void disableForegroundDispatchSystem(){

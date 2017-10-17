@@ -25,7 +25,7 @@ import org.ksoap2.transport.HttpTransportSE;
         public final String SOA_StartShift3b = "http://tempuri.org/StartShift3b";
         public final String SOA_StaffLogin4 = "http://tempuri.org/StaffLogin4";
         public final String SOA_ScanTagForPayment6 = "http://tempuri.org/ScanTagForPayment6";
-        public final String SOA_PaymentResult7NoPin = "http://tempuri.org/PaymentResult7NoPin";
+        public final String SOA_PaymentResult7 = "http://tempuri.org/PaymentResult7";
         public final String SOA_ScanTagForPaymentRefund6 = "http://tempuri.org/ScanTagForPaymentRefund6";
         public final String SOA_PaymentResultRefund7 = "http://tempuri.org/PaymentResultRefund7";
         public final String SOA_CloseShift9 = "http://tempuri.org/CloseShift9";
@@ -48,7 +48,7 @@ import org.ksoap2.transport.HttpTransportSE;
         public  final String StaffLogin4 = "StaffLogin4";
         public  final String ScanTagForPayment6 = "ScanTagForPayment6";
         public  final String ScanTagForPaymentRefund6 = "ScanTagForPaymentRefund6";
-        public  final String PaymentResult7NoPin = "PaymentResult7NoPin";
+        public  final String PaymentResult7 = "PaymentResult7";
         public  final String PaymentResultRefund7 = "PaymentResultRefund7";
         public  final String CloseShift9 = "CloseShift9";
 
@@ -58,7 +58,7 @@ import org.ksoap2.transport.HttpTransportSE;
 
         //public  final String SOAP_ADDRESS = "http://demo.miid.co.zw/miidwebservice.asmx";
         //public  final String SOAP_ADDRESS = "http://training.miid.co.zw/miidwebservice.asmx";
-        public  final String SOAP_ADDRESS = "https://miid.co.za/MiidWebservice.asmx";
+        public  final String SOAP_ADDRESS = "https://miid.co.za/miidwebservice.asmx";
        //public  final String SOAP_ADDRESS = "https://www.miid.co.za/miidwebservice.asmx";
 
         public MySOAPCallActivity()
@@ -484,10 +484,10 @@ import org.ksoap2.transport.HttpTransportSE;
         }
 
 
-        //1. PaymentResult7NoPin
-        public String PaymentResult7NoPin(Integer PinNumber, String TagNumber, Integer Amount, Integer EventID, Integer VendorID, String DeviceCode, Integer StaffID, Integer ShiftNo)
+        //1. PaymentResult7
+        public String PaymentResult7(Integer PinNumber, String TagNumber, Integer Amount, Integer EventID, Integer VendorID, String DeviceCode, Integer StaffID, Integer ShiftNo)
         {
-            SoapObject request = new SoapObject(WSDL_TARGET_NAMESPACE,PaymentResult7NoPin);
+            SoapObject request = new SoapObject(WSDL_TARGET_NAMESPACE,PaymentResult7);
 
 
             PropertyInfo pi2=new PropertyInfo();
@@ -548,7 +548,7 @@ import org.ksoap2.transport.HttpTransportSE;
             Object response=null;
             try
             {
-                httpTransport.call(SOA_PaymentResult7NoPin, envelope);
+                httpTransport.call(SOA_PaymentResult7, envelope);
                 response = envelope.getResponse();
             }
             catch (Exception exception)
@@ -561,7 +561,7 @@ import org.ksoap2.transport.HttpTransportSE;
         }
 
 
-        //1. PaymentResult7NoPin
+        //1. PaymentResult7
         public String PaymentResultRefund7(Integer PinNumber, String TagNumber, Integer Amount, Integer EventID, Integer VendorID, String DeviceCode, Integer StaffID, Integer ShiftNo)
         {
             SoapObject request = new SoapObject(WSDL_TARGET_NAMESPACE,PaymentResultRefund7);

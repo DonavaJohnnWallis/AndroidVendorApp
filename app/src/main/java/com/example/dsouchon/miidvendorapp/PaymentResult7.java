@@ -4,9 +4,6 @@ import android.content.Intent;
 
 import android.content.pm.ActivityInfo;
 import android.media.MediaPlayer;
-import android.media.Ringtone;
-import android.media.RingtoneManager;
-import android.net.Uri;
 import android.os.AsyncTask;
         import android.os.Bundle;
 
@@ -14,8 +11,7 @@ import android.os.AsyncTask;
 import android.view.MenuItem;
         import android.view.View;
 
-import android.widget.ProgressBar;
-import android.widget.TextView;
+        import android.widget.TextView;
         import android.widget.Toast;
 
         import java.io.IOException;
@@ -46,12 +42,6 @@ public class PaymentResult7 extends AppCompatActivity {
                 result = Local.read(this.getApplicationContext(), "PaymentResult");
                 final TextView lblPaymentResult = (TextView) findViewById(R.id.lblResult);
                 lblPaymentResult.setText(result.toString());
-
-                //plays sound via mp3 (prefered) use "alarm.mp3" for deny access
-
-
-                //plays sound via alarm notficication (this is dependant on phone settings)
-
 
                 if (result.toLowerCase().contains("transaction successful."))//"funds available"
                 {
