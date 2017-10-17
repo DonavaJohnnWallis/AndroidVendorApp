@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_my_soapcall">MySOAPCallActivity</string>
+    <string name="title_activity_setup_event">SetupEvent</string>
+    <string name="clearPayment">clearPayment</string>
+    <string name="Clear">Clear</string>
+    <string name="actiontutorial">actiontutorial</string>
+    <string name="tutmenu">tutmenu</string>
+    <string name="Tutorial">Tutorial</string>
+    <string name="Register">Register</string>
+</resources>

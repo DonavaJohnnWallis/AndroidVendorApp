@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient">
+
+
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REPRINT SLIP"
+            android:id="@+id/btnRePrintSlip"
+            android:onClick="ReprintSlip"
+            android:background="@drawable/ovalcornersfull"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            />
+
+        <TextView   android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textView5"
+            />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MAIN MENU"
+            android:id="@+id/btnMainMenu"
+            android:onClick="MainMenu"
+            android:background="@drawable/ovalcornersstroke"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+
+            />
+    </LinearLayout>
+</LinearLayout>

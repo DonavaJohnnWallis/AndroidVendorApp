@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dsouchon.miidvendorapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-feature android:name="android.hardware.nfc" android:required="true"/>
+    <!-- COMMENTED OUT FOR DEBUGGING WITHOUT NFC TAG PHONE -->
+    <!--
+     To retrieve OAuth 2.0 tokens or invalidate tokens to disconnect a user. This disconnect
+     option is required to comply with the Google+ Sign-In developer policies
+    -->
+
+
+    <application
+        android:largeHeap="true"
+        android:name=".GlobalClass"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="MiiD Vendor App"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="MIID CASHLESS SERVICES">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MySOAPCallActivity"
+            android:label="@string/title_activity_my_soapcall" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".MainActivity21"
+            android:label="MainActivity21" />
+        <activity
+            android:name=".SetupEvent"
+            android:label="EVENT SETUP"
+            />
+        <activity
+            android:name=".TenderAmount5"
+            android:label="TENDER AMOUNT" />
+        <activity
+            android:name=".TenderAmountRefund5"
+            android:label="REFUND AMOUNT" />
+        <activity
+            android:name=".ScanTagPin6"
+            android:label="SCAN TAG / ENTER PIN" />
+        <activity
+            android:name=".ScanTagPinRefund6"
+            android:label="SCAN TAG / ENTER PIN" />
+        <activity
+            android:name=".VendorLogin1"
+            android:label="VENDOR AUTHORISATION" />
+        <activity
+            android:name=".SetEvent2"
+            android:label="EVENT SETUP" />
+        <activity
+            android:name=".StartShift3"
+            android:label="START SHIFT" />
+        <activity
+            android:name=".AddStaff"
+            android:label="ADD STAFF OR START SHIFT" />
+        <activity
+            android:name=".StaffLogin4"
+            android:label="STAFF LOGIN" />
+        <activity
+            android:name=".PaymentResult7"
+            android:label="PAYMENT RESULT" />
+        <activity
+            android:name=".PaymentResultRefund7"
+            android:label="Payment Result Refund" />
+        <activity
+            android:name=".ReprintSlip8"
+            android:label="Reprint Slip" />
+        <activity
+            android:name=".CloseShift9"
+            android:label="Close Shift" />
+        <activity android:name=".Reset101">
+
+        </activity>
+
+
+        <activity android:name=".Pop"
+            android:theme="@style/AppTheme.CustomTheme">
+
+        </activity>
+    </application>
+
+</manifest>

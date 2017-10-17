@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+    android:weightSum="1"
+    android:background="@drawable/gradient"
+    android:keepScreenOn="true">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:background="#ffffff">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/imageViewEventImage"
+                android:layout_gravity="center_horizontal"
+                android:textSize="24dp"
+                android:visibility="gone" />
+
+            <EditText
+                style="@style/passwordtext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="TagNumber"
+                android:id="@+id/editTagNumber"
+                android:textColor="#b1b1b1"
+                android:textAlignment="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#b1b1b1"
+                android:textColorHint="#b1b1b1"
+                android:textSize="15dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:id="@+id/imageViewProfilePic"
+                app:civ_border_color="#ccced4"
+                android:src="@drawable/staff"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="53"
+            android:background="#ffffff">
+
+            <TextView
+                style="@style/smallwordtext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingLeft="20dp"
+                android:id="@+id/nameSurname"
+                android:layout_weight="1" />
+
+            <TextView
+                style="@style/smallwordtext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingLeft="20dp"
+                android:id="@+id/idNumber"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="30">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="#f5ab1c"/>
+
+            <TextView
+                style="@style/smallwordtextwhite"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingLeft="20dp"
+                android:id="@+id/ticketClass"
+                android:layout_weight="1" />
+
+            <TextView
+                style="@style/smallwordtextwhite"
+                android:id="@+id/labelScanResult"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingLeft="20dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:background="@drawable/ovalcornersfull"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text=" YES"
+                android:id="@+id/buttonYes"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="NO"
+                android:id="@+id/buttonNo"
+                android:background="@drawable/ovalcornersstroke"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

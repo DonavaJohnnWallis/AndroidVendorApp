@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud_app"
+    android:keepScreenOn="true">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      >
+
+        <Button
+            android:text="Tutorial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tutorialbtn"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:src="@drawable/logo"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=""
+            android:id="@+id/vendorLoginResult"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+
+
+        <EditText
+            style="@style/passwordtext"
+            android:backgroundTint="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editVendorCode"
+            android:inputType="number"
+
+            android:layout_row="0"
+            android:layout_column="0"
+            android:hint="Enter Vendor Code"
+
+
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:layout_margin="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+
+        <EditText
+            style="@style/passwordtext"
+            android:backgroundTint="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:ems="10"
+            android:id="@+id/editVendorPin"
+            android:layout_row="1"
+            android:layout_column="0"
+
+            android:hint="Enter Pin"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:layout_margin="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=" LOG IN"
+            android:id="@+id/buttonLogIn"
+            android:background="@drawable/ovalcornersfull"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:layout_marginTop="20dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:onClick="VendorLogin" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

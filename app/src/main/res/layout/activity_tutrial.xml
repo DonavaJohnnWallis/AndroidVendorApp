@@ -1,0 +1,527 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+
+    tools:context="com.example.dsouchon.miidvendorapp.Pop"
+    android:screenOrientation="portrait"
+    android:background="#505050"
+    android:keepScreenOn="true">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <ViewFlipper
+            android:layout_height="wrap_content"
+            android:id="@+id/viewFlipper"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/seteventlayout">
+
+                <ImageView
+
+                    android:id="@+id/tutimg1"
+                    android:onClick="SetEvent"
+                    android:src="@drawable/logo"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    style="@style/smallwordtext"
+                    android:textColor="#ffffff"
+                    android:text="Welcome to Mii-D's Cashless App. Once you have viewed our quick tutorial you will be able to Login or Register."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView12"
+                    android:layout_weight="1"
+                    />
+
+                <Button
+                    android:text="Continue to Login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/previous"
+                    android:background="@drawable/buttonborder"
+                    android:layout_margin="5dp"
+                    android:textColor="#ffffff"
+                    android:layout_alignParentBottom="true"
+                    android:visibility="invisible"
+
+                    />
+
+
+
+                <Button
+                    android:text="Start Tutorial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/next"
+                    android:background="@drawable/buttonborder"
+                    android:layout_margin="5dp"
+                    android:textColor="#ffffff"
+                    android:layout_alignParentBottom="true"/>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/startshiftlayouta">
+
+                <ImageView
+                    android:layout_height="140dp"
+                    android:layout_width="140dp"
+                    android:src="@drawable/tuta"
+                    android:id="@+id/buttonStartShifta"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+
+                    />
+
+                <TextView
+                    style="@style/smallwordtext"
+                    android:textColor="#ffffff"
+                    android:text="To use this app you will need to create an account with Mii-D. Click Register in the Main Menu to create a free account."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView13a"
+                    android:layout_weight="1"
+                    />
+
+                <Button
+                    android:text="previous1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/previousa"
+                    android:background="@drawable/buttonborder"
+                    android:layout_margin="5dp"
+                    android:textColor="#ffffff"
+                    android:visibility="gone"
+                    android:layout_alignParentBottom="true"/>
+
+
+
+                <Button
+                    android:text="next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nexta"
+                    android:background="@drawable/buttonborder"
+                    android:layout_margin="5dp"
+                    android:textColor="#ffffff"
+                    android:layout_alignParentBottom="true"/>
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/startshiftlayout">
+
+                <ImageView
+                    android:layout_height="240dp"
+                    android:layout_width="240dp"
+                    android:src="@drawable/tut1"
+                    android:id="@+id/buttonStartShift"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+
+                    />
+
+                <TextView
+                    style="@style/smallwordtext"
+                    android:textColor="#ffffff"
+                    android:text="Once you have registered you can login with your details. Click on the highlighted buttons to setup the App."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView13"
+                    android:layout_weight="1"
+                    />
+
+                <Button
+                    android:text="previous1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/previousone"
+                    android:background="@drawable/buttonborder"
+                    android:layout_margin="5dp"
+                    android:textColor="#ffffff"
+                    android:visibility="gone"
+                    android:layout_alignParentBottom="true"/>
+
+
+
+                <Button
+                    android:text="next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nextone"
+                    android:background="@drawable/buttonborder"
+                    android:layout_margin="5dp"
+                    android:textColor="#ffffff"
+                    android:layout_alignParentBottom="true"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:id="@+id/staffaddlayout">
+
+                <ImageView
+                    android:layout_height="240dp"
+                    android:layout_width="240dp"
+                    android:src="@drawable/tut2"
+                    android:id="@+id/buttonAddStaff"
+                    android:onClick="AddStaff"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    style="@style/smallwordtext"
+                    android:textColor="#ffffff"
+                    android:text="Follow the prompts at the top of the screen for help."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView14"
+                    android:layout_weight="1"
+                    />
+
+                <Button
+                    android:text="previous2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/previoustwo"
+                    android:background="@drawable/buttonborder"
+                    android:layout_margin="5dp"
+                    android:textColor="#ffffff"
+                    android:visibility="gone"
+                    android:layout_alignParentBottom="true"/>
+
+
+
+                <Button
+                    android:text="next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nexttwo"
+                    android:background="@drawable/buttonborder"
+                    android:layout_margin="5dp"
+                    android:textColor="#ffffff"
+                    android:layout_alignParentBottom="true"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:id="@+id/staffloginlayout">
+
+                <ImageView
+                    android:layout_height="240dp"
+                    android:layout_width="240dp"
+                    android:src="@drawable/tut3"
+                    android:id="@+id/buttonStaffLogin"
+                    android:onClick="StaffLogin"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    style="@style/smallwordtext"
+                    android:textColor="#ffffff"
+                    android:text="Use Main Menu as navgation. The Back Button is disabled to avoid pressing it accidently."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView15"
+                    android:layout_weight="1"
+                    />
+
+
+                <Button
+                    android:text="previous3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/previousthree"
+                    android:background="@drawable/buttonborder"
+                    android:layout_margin="5dp"
+                    android:textColor="#ffffff"
+                    android:visibility="gone"
+                    android:layout_alignParentBottom="true"/>
+
+
+
+                <Button
+                    android:text="next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nextthree"
+                    android:background="@drawable/buttonborder"
+                    android:layout_margin="5dp"
+                    android:textColor="#ffffff"
+                    android:layout_alignParentBottom="true"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:id="@+id/tenderlayout">
+
+                <ImageView
+                    android:layout_height="240dp"
+                    android:layout_width="240dp"
+                    android:src="@drawable/tut4"
+                    android:id="@+id/buttonTransact"
+                    android:onClick="TenderAmount"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    style="@style/smallwordtext"
+                    android:textColor="#ffffff"
+                    android:text="Once you have chosen and event, added staff, started a shift and logged on a staff member you will be able to start making sales."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView16"
+                    android:layout_weight="1"
+                    />
+
+                <Button
+                    android:text="previous4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/previousfour"
+                    android:background="@drawable/buttonborder"
+                    android:layout_margin="5dp"
+                    android:textColor="#ffffff"
+                    android:visibility="gone"
+                    android:layout_alignParentBottom="true"/>
+
+
+
+                <Button
+                    android:text="next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nextfour"
+                    android:background="@drawable/buttonborder"
+                    android:layout_margin="5dp"
+                    android:textColor="#ffffff"
+                    android:layout_alignParentBottom="true"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:id="@+id/endshiftlayout">
+
+                <ImageView
+                    android:layout_height="240dp"
+                    android:layout_width="240dp"
+                    android:src="@drawable/tut5"
+                    android:id="@+id/buttonEndShift"
+                    android:onClick="CloseShift"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    style="@style/smallwordtext"
+                    android:textColor="#ffffff"
+                    android:text="To changes setting re-login as vendor here."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView17"
+                    android:layout_weight="1"
+                    />
+
+                <Button
+                    android:text="previous5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/previousfive"
+                    android:background="@drawable/buttonborder"
+                    android:layout_margin="5dp"
+                    android:textColor="#ffffff"
+                    android:visibility="gone"
+                    android:layout_alignParentBottom="true"/>
+
+
+
+                <Button
+                    android:text="Next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nextfive"
+                    android:background="@drawable/buttonborder"
+                    android:layout_margin="5dp"
+                    android:textColor="#ffffff"
+                    android:layout_alignParentBottom="true"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:id="@+id/endshiftlayoutb">
+
+                <ImageView
+                    android:layout_height="240dp"
+                    android:layout_width="240dp"
+                    android:src="@drawable/tutb"
+                    android:id="@+id/buttonEndShiftb"
+                    android:onClick="CloseShift"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    style="@style/smallwordtext"
+                    android:textColor="#ffffff"
+                    android:text="To clear a sale select Clear on Main Menu."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewb"
+                    android:layout_weight="1"
+                    />
+
+                <Button
+                    android:text="previous5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/previousb"
+                    android:background="@drawable/buttonborder"
+                    android:layout_margin="5dp"
+                    android:textColor="#ffffff"
+                    android:visibility="gone"
+                    android:layout_alignParentBottom="true"/>
+
+
+
+                <Button
+                    android:text="Next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nextb"
+                    android:background="@drawable/buttonborder"
+                    android:layout_margin="5dp"
+                    android:textColor="#ffffff"
+                    android:layout_alignParentBottom="true"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:id="@+id/endshiftlayout6">
+
+                <ImageView
+                    android:layout_height="240dp"
+                    android:layout_width="240dp"
+                    android:src="@drawable/tut6"
+                    android:id="@+id/buttonEndShift6"
+                    android:onClick="CloseShift"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    style="@style/smallwordtext"
+                    android:textColor="#ffffff"
+                    android:text="To view this tutorial again look for it in the Main Menu."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView176"
+                    android:layout_weight="1"
+                    />
+
+                <Button
+                    android:text="previous5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/previoussix"
+                    android:background="@drawable/buttonborder"
+                    android:layout_margin="5dp"
+                    android:textColor="#ffffff"
+                    android:visibility="gone"
+                    android:layout_alignParentBottom="true"/>
+
+
+
+                <Button
+                    android:text="FINISH"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nextsix"
+                    android:background="@drawable/buttonborder"
+                    android:layout_margin="5dp"
+                    android:textColor="#ffffff"
+                    android:layout_alignParentBottom="true"
+                    />
+
+
+            </LinearLayout>
+
+
+        </ViewFlipper>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+
+        android:layout_alignParentBottom="true">
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

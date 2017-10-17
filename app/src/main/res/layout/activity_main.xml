@@ -1,0 +1,275 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    tools:context="com.example.dsouchon.miidvendorapp.MainActivity"
+    android:screenOrientation="portrait"
+    android:background="@drawable/backgroud_app"
+    android:keepScreenOn="true">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp">
+
+            <TextView
+                android:layout_height="240dp"
+                android:layout_width="240dp"
+                android:id="@+id/lblInstallationID"
+                android:visibility="gone" />
+
+            <TextView
+
+                style="@style/smallwordtextwhite"
+                android:background="#99106bd1"
+                android:layout_width="match_parent"
+                android:text="Event:"
+                android:id="@+id/lblEventName"
+                android:layout_height="40dp"
+                android:gravity="left|center" />
+
+            <TextView
+
+                style="@style/smallwordtextwhite"
+                android:background="#99000000"
+                android:layout_width="match_parent"
+                android:text="Staff:"
+                android:id="@+id/labelStaffCode"
+                android:hint="No Staff Loaded"
+                android:layout_height="40dp"
+                android:gravity="left|center" />
+        </LinearLayout>
+
+        <ViewFlipper
+            android:layout_height="wrap_content"
+            android:id="@+id/viewFlipper"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="24dp"
+                android:id="@+id/seteventlayout">
+
+                <Button
+
+                    android:id="@+id/buttonManageEvents"
+                    android:onClick="SetEvent"
+                    android:background="@drawable/buttonstatemanage"
+                    android:textSize="15dp"
+                    android:layout_height="240dp"
+                    android:layout_width="240dp"
+                    android:gravity="center"
+                    android:layout_marginBottom="70dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="24dp"
+                android:id="@+id/startshiftlayout">
+
+            <Button
+                android:layout_height="240dp"
+                android:layout_width="240dp"
+                android:background="@drawable/buttonstatesstartshift"
+                android:id="@+id/buttonStartShift"
+                android:onClick="StartShift"
+                android:gravity="center"
+                android:layout_marginBottom="70dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="24dp"
+                android:id="@+id/staffaddlayout">
+
+            <Button
+                android:layout_height="240dp"
+                android:layout_width="240dp"
+
+                android:background="@drawable/buttonstatesaddstaff"
+
+                android:id="@+id/buttonAddStaff"
+                android:onClick="AddStaff"
+                android:gravity="center"
+                android:layout_marginBottom="70dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="24dp"
+                android:id="@+id/staffloginlayout">
+
+            <Button
+                android:layout_height="240dp"
+                android:layout_width="240dp"
+                android:background="@drawable/buttonstatestafflog"
+                android:id="@+id/buttonStaffLogin"
+                android:onClick="StaffLogin"
+                android:gravity="center"
+                android:layout_marginBottom="70dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="24dp"
+                android:id="@+id/tenderlayout">
+
+            <Button
+                android:layout_height="240dp"
+                android:layout_width="240dp"
+                android:background="@drawable/buttonstatetener"
+                android:id="@+id/buttonTransact"
+                android:onClick="TenderAmount"
+                android:gravity="center"
+                android:layout_marginBottom="70dp"/>
+
+               </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="24dp"
+                android:id="@+id/endshiftlayout">
+
+            <Button
+                android:layout_height="240dp"
+                android:layout_width="240dp"
+                android:background="@drawable/buttonstatecloseshift"
+                android:id="@+id/buttonEndShift"
+                android:onClick="CloseShift"
+                android:gravity="center"
+                android:layout_marginBottom="70dp" />
+
+            </LinearLayout>
+
+
+        </ViewFlipper>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <Button
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:layout_margin="10dp"
+            android:id="@+id/buttonVendorLogin"
+            android:onClick="VendorLogin"
+            android:background="@drawable/buttonstate"
+            android:gravity="top"/>
+
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/buttonReprintSlip"
+            android:onClick="ReprintSlip"
+            android:layout_column="0"
+            android:textColor="#ffffff"
+            android:background="@drawable/print"
+            android:layout_margin="10dp"
+            android:gravity="top"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/buttonRefund"
+            android:onClick="Refund"
+            android:layout_column="1"
+            android:textColor="#ffffff"
+            android:background="@drawable/refund"
+            android:layout_margin="10dp"
+            android:gravity="top"
+            />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/logoffbutton"
+            android:id="@+id/buttonVendorOff"
+            android:onClick="VendorLogoff"
+            android:layout_margin="10dp"
+            android:gravity="top"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="70dp"
+        >
+
+        <Button
+            android:text="previous"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/previous"
+            android:layout_weight="1"
+            android:background="@drawable/buttonborder"
+            android:layout_margin="5dp"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:text="next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/next"
+            android:layout_weight="1"
+            android:background="@drawable/buttonborder"
+            android:layout_margin="5dp"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
