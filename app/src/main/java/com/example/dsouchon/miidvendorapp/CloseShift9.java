@@ -124,7 +124,7 @@ public class CloseShift9  extends Activity {
                     //new PrintEODReport().execute(result.toString(), printerIP.getText().toString());
 
                     Local.Set(getApplicationContext(), "VendorLoggedIn", "0");
-                    Local.Set(getApplicationContext(), "EventSet", "0");
+                   // Local.Set(getApplicationContext(), "EventSet", "0");
                     Local.Set(getApplicationContext(), "EventList", "0");
                     Local.Set(getApplicationContext(), "EventID", "0");
                     Local.Set(getApplicationContext(), "StaffLoggedIn", "0");

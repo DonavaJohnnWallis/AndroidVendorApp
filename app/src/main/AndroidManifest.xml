@@ -4,20 +4,22 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.NFC" />
-    <uses-feature android:name="android.hardware.nfc" android:required="true"/>
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+
     <!-- COMMENTED OUT FOR DEBUGGING WITHOUT NFC TAG PHONE -->
     <!--
      To retrieve OAuth 2.0 tokens or invalidate tokens to disconnect a user. This disconnect
      option is required to comply with the Google+ Sign-In developer policies
     -->
-
-
     <application
-        android:largeHeap="true"
         android:name=".GlobalClass"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="MiiD Vendor App"
+        android:largeHeap="true"
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
@@ -41,8 +43,7 @@
             android:label="MainActivity21" />
         <activity
             android:name=".SetupEvent"
-            android:label="EVENT SETUP"
-            />
+            android:label="EVENT SETUP" />
         <activity
             android:name=".TenderAmount5"
             android:label="TENDER AMOUNT" />
@@ -82,15 +83,11 @@
         <activity
             android:name=".CloseShift9"
             android:label="Close Shift" />
-        <activity android:name=".Reset101">
-
-        </activity>
-
-
-        <activity android:name=".Pop"
-            android:theme="@style/AppTheme.CustomTheme">
-
-        </activity>
+        <activity android:name=".Reset101"></activity>
+        <activity
+            android:name=".Pop"
+            android:theme="@style/AppTheme.CustomTheme"></activity>
+        <activity android:name=".viewflipper"></activity>
     </application>
 
 </manifest>

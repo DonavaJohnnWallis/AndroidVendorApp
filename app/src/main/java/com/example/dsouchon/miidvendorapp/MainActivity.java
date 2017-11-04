@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
 
+
         //if no-one is logged in show vendor log in screen
         RegisterDevice();
 
@@ -87,17 +88,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         lblEventName.setText("Event:" + Local.Get(getApplicationContext(), "EventName"));
 
 
-
-
-        viewFlipper = (ViewFlipper) findViewById(R.id.viewFlipper);
-        next = (Button) findViewById(R.id.next);
-        previous = (Button) findViewById(R.id.previous);
-
-        next.setOnClickListener(this);
-        previous.setOnClickListener(this);
-
-
-        /*
+    /*
         String message = "";
 
         try {
@@ -115,6 +106,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         */
 
+
+        /* used to filip through views in view flipper */
+
+        viewFlipper = (ViewFlipper) findViewById(R.id.viewFlipper);
+        next = (Button) findViewById(R.id.next);
+        previous = (Button) findViewById(R.id.previous);
+
+        next.setOnClickListener(this);
+        previous.setOnClickListener(this);
+
+
+
     }
 
     @Override
@@ -130,6 +133,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
+
+
+
     public void EnableDisableButtons()
     {
 
@@ -140,32 +146,93 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Button buttonSetEvent = (Button)this.findViewById(R.id.buttonManageEvents);
         buttonSetEvent.setEnabled(EnableButton("SetEvent"));
+        //disables child button
+        Button buttonSetEventbtn = (Button)this.findViewById(R.id.GoToSetEvenBtn);
+        buttonSetEventbtn.setEnabled(EnableButton("SetEvent"));
+
 
         Button buttonAddStaff = (Button)this.findViewById(R.id.buttonAddStaff);
         buttonAddStaff.setEnabled(EnableButton("AddStaff"));
+        //disables child button
+        Button buttonEndShiftbtn1 = (Button)this.findViewById(R.id.GoToAddStaffBtn);
+        buttonEndShiftbtn1.setEnabled(EnableButton("AddStaff"));
+
 
         Button buttonStartShift = (Button)this.findViewById(R.id.buttonStartShift);
         buttonStartShift.setEnabled(EnableButton("StartShift"));
+        //disables child button
+        Button buttonEndShiftbtn2 = (Button)this.findViewById(R.id.GoToStartShiftBtn);
+        buttonEndShiftbtn2.setEnabled(EnableButton("StartShift"));
 
-        Button buttonReprintSlip = (Button)this.findViewById(R.id.buttonReprintSlip);
-        buttonReprintSlip.setEnabled(EnableButton("ReprintSlip"));
-
-        Button buttonRefund = (Button)this.findViewById(R.id.buttonRefund);
-        buttonRefund.setEnabled(true);//EnableButton("Refund"));
 
         Button buttonTransact = (Button)this.findViewById(R.id.buttonTransact);
         buttonTransact.setEnabled(EnableButton("Tender"));
+        //disables child button
+        Button buttonEndShiftbtn4 = (Button)this.findViewById(R.id.GoToStartSaleBtn);
+        buttonEndShiftbtn4.setEnabled(EnableButton("Tender"));
+
 
         Button buttonStaffLogin = (Button)this.findViewById(R.id.buttonStaffLogin);
         buttonStaffLogin.setEnabled(EnableButton("StaffLogin"));
-
+        //disables child button
+        Button buttonEndShiftbtn5 = (Button)this.findViewById(R.id.GoToStaffLoginBtn);
+        buttonEndShiftbtn5.setEnabled(EnableButton("StaffLogin"));
 
 
         Button buttonEndShift = (Button)this.findViewById(R.id.buttonEndShift);
         buttonEndShift.setEnabled(EnableButton("CloseShift"));
+        //disables child button
+        Button buttonEndShiftbtn = (Button)this.findViewById(R.id.GoToCloseShiftBtn);
+        buttonEndShiftbtn.setEnabled(EnableButton("CloseShift"));
+
+
+        Button buttonReprintSlip = (Button)this.findViewById(R.id.buttonReprintSlip);
+        buttonReprintSlip.setEnabled(EnableButton("ReprintSlip"));
+
+
+        Button buttonRefund = (Button)this.findViewById(R.id.buttonRefund);
+        buttonRefund.setEnabled(true);//EnableButton("Refund"));
+
 
 
     }
+
+    //links child button to parent flipper layout
+    public void GoToCloseShift(View view) {
+        viewFlipper.setDisplayedChild(1);
+        viewFlipper.setDisplayedChild(viewFlipper.indexOfChild(findViewById(R.id.endshiftlayout)));
+    }
+
+    public void GoToStaffLogin(View view) {
+        viewFlipper.setDisplayedChild(2);
+        viewFlipper.setDisplayedChild(viewFlipper.indexOfChild(findViewById(R.id.staffloginlayout)));
+    }
+
+    public void GoToStartSale(View view) {
+        viewFlipper.setDisplayedChild(3);
+        viewFlipper.setDisplayedChild(viewFlipper.indexOfChild(findViewById(R.id.tenderlayout)));
+    }
+
+    public void GoToToAddStaff(View view) {
+        viewFlipper.setDisplayedChild(5);
+        viewFlipper.setDisplayedChild(viewFlipper.indexOfChild(findViewById(R.id.staffaddlayout)));
+    }
+
+    public void GoToStartShift(View view) {
+        viewFlipper.setDisplayedChild(5);
+        viewFlipper.setDisplayedChild(viewFlipper.indexOfChild(findViewById(R.id.startshiftlayout)));
+    }
+
+    public void GoToSetEvent(View view) {
+        viewFlipper.setDisplayedChild(6);
+        viewFlipper.setDisplayedChild(viewFlipper.indexOfChild(findViewById(R.id.seteventlayout)));
+    }
+
+
+
+
+
+
 
     public boolean GetButtonSetting ( String SettingName) {
         try {
@@ -450,6 +517,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     }
+
+
+
     //Webmethod functions start
     public class CallSoapRegisterDevice0 extends AsyncTask<RegisterDevice0Parameters, Void, String> {
 
