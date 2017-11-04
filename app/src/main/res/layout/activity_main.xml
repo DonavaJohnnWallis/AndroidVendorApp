@@ -12,9 +12,104 @@
 
     <LinearLayout
         android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <Button
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:layout_margin="10dp"
+            android:id="@+id/buttonVendorLogin"
+            android:onClick="VendorLogin"
+            android:background="@drawable/buttonstate"
+            android:gravity="top"/>
+
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/buttonReprintSlip"
+            android:onClick="ReprintSlip"
+            android:layout_column="0"
+            android:textColor="#ffffff"
+            android:background="@drawable/print"
+            android:layout_margin="10dp"
+            android:gravity="top"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/buttonRefund"
+            android:onClick="Refund"
+            android:layout_column="1"
+            android:textColor="#ffffff"
+            android:background="@drawable/refund"
+            android:layout_margin="10dp"
+            android:gravity="top"
+            android:visibility="gone"
+
+            />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/logoffbutton"
+            android:id="@+id/buttonVendorOff"
+            android:onClick="VendorLogoff"
+            android:layout_margin="10dp"
+            android:gravity="top"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="70dp"
+        >
+
+        <Button
+            android:text="previous"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/previous"
+            android:layout_weight="1"
+            android:background="@drawable/buttonborder"
+            android:layout_margin="5dp"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:text="next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/next"
+            android:layout_weight="1"
+            android:background="@drawable/buttonborder"
+            android:layout_margin="5dp"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:weightSum="1">
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
 
         <LinearLayout
             android:orientation="vertical"
@@ -178,99 +273,6 @@
 
         </ViewFlipper>
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:background="#000000"
-        android:gravity="center"
-        android:padding="5dp">
-
-        <Button
-            android:layout_height="40dp"
-            android:layout_width="40dp"
-            android:layout_margin="10dp"
-            android:id="@+id/buttonVendorLogin"
-            android:onClick="VendorLogin"
-            android:background="@drawable/buttonstate"
-            android:gravity="top"/>
-
-
-        <Button
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:id="@+id/buttonReprintSlip"
-            android:onClick="ReprintSlip"
-            android:layout_column="0"
-            android:textColor="#ffffff"
-            android:background="@drawable/print"
-            android:layout_margin="10dp"
-            android:gravity="top"
-            android:visibility="gone"
-            />
-
-        <Button
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:id="@+id/buttonRefund"
-            android:onClick="Refund"
-            android:layout_column="1"
-            android:textColor="#ffffff"
-            android:background="@drawable/refund"
-            android:layout_margin="10dp"
-            android:gravity="top"
-            android:visibility="gone"
-
-            />
-
-        <Button
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:background="@drawable/logoffbutton"
-            android:id="@+id/buttonVendorOff"
-            android:onClick="VendorLogoff"
-            android:layout_margin="10dp"
-            android:gravity="top"/>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"></LinearLayout>
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0"
-
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="70dp"
-        >
-
-        <Button
-            android:text="previous"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/previous"
-            android:layout_weight="1"
-            android:background="@drawable/buttonborder"
-            android:layout_margin="5dp"
-            android:textColor="#ffffff"/>
-
-        <Button
-            android:text="next"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/next"
-            android:layout_weight="1"
-            android:background="@drawable/buttonborder"
-            android:layout_margin="5dp"
-            android:textColor="#ffffff"/>
     </LinearLayout>
 
 
