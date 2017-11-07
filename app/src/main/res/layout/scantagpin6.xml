@@ -2,84 +2,38 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroud_app"
-    android:keepScreenOn="true">
+    android:background="#FFFFFF"
+    android:keepScreenOn="true"
+   >
 
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="59"
-        android:background="#000000"
-        android:id="@+id/ll1top"
-        android:visibility="gone"
-        >
-
-        <TextView
-            style="@style/smallwordtext"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Amount Requested:"
-            android:id="@+id/textView2"
-            android:layout_row="0"
-            android:layout_column="0"
-            android:textSize="15dp"
-            android:layout_weight="1" />
-
-
-
-        <TextView
-            style="@style/smallwordtext"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="0.00"
-            android:id="@+id/textViewAmountToPay"
-
-            android:textSize="15dp"
-            android:layout_weight="1" />
-
-        <TextView
-            style="@style/smallwordtext"
-            android:textSize="15dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="..."
-
-            android:id="@+id/vendorLoginResult"
-            android:layout_weight="1" />
-
-    </LinearLayout>
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="45"
-        android:id="@+id/ll2top"
-        android:visibility="visible"
-        >
+        android:id="@+id/textscan"
 
-        <ProgressBar
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/progressbar"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp">
 
-            />
 
         <TextView
             style="@style/BoldText"
-            android:textColor="#ffffff"
+            android:textColor="#000000"
             android:textStyle="bold"
-            android:text="Scan users tag"
+            android:text="Scan users tag:"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textView9"
-            android:layout_weight="1"
-            />
+            android:id="@+id/texview10" />
+
+
+        <ImageView
+            android:id="@+id/scanimage"
+            android:src="@drawable/scantag"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center" />
+
 
         <EditText
             android:visibility="gone"
@@ -90,9 +44,9 @@
             android:ems="10"
             android:id="@+id/editTagNumber"
             android:hint="Tag No."
-            android:textColorHint="#ffffff"
+            android:textColorHint="#000000"
             android:text=""
-            android:backgroundTint="#ffffff"
+            android:backgroundTint="#000000"
             android:layout_weight="1"
             />
 <!--3B8819D2-->
@@ -107,224 +61,324 @@
     </LinearLayout>
 
     <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Btnlayout"
+        android:background="#efefef"
+        android:visibility="gone"
+
+
+
+      >
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="45"
+                android:background="#ffffff"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/ll1top">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="30" >
+
+                    <TextView
+                        style="@style/BoldText"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:text="Amount: R"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/randvalue"
+                        android:layout_below="@+id/btn0"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        style="@style/BoldText"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textColorHint="#000000"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/textViewAmountToPay"
+                        android:layout_below="@+id/btn0"
+                        android:layout_centerHorizontal="true"
+                        android:hint="R0,00"
+                        android:layout_weight="1"
+
+                        />
+
+                </LinearLayout>
+
+
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:background="#f5ab1c"
+                android:layout_weight="7"
+                android:layout_height="8dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_weight="45">
+
+            <TextView
+                style="@style/BoldText"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="Enter PIN"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textPin"
+                android:layout_weight="1"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="45"
+                android:id="@+id/ll3"
+                android:layout_marginBottom="0dp"
+
+                >
+
+            <EditText
+                style="@style/passwordtext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberPassword"
+
+                android:id="@+id/editTagPin"
+                android:hint="****"
+                android:textColorHint="#000000"
+                android:textSize="30dp"
+                android:textColor="#000000"
+                android:backgroundTint="#0000"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_weight="45"
-            android:id="@+id/ll3"
-            android:layout_marginBottom="0dp"
-            android:visibility="invisible"
+            android:id="@+id/ll4"
+
             >
 
-        <EditText
-            style="@style/passwordtext"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:inputType="numberPassword"
-            android:ems="10"
-            android:id="@+id/editTagPin"
-            android:hint="Enter PIN"
-            android:textColorHint="#ffffff"
-            android:textColor="#ffffff"
-            android:backgroundTint="#ffffff"
-        />
+            <Button
+                style="@style/buttonssmallleft"
+                android:background="@drawable/roundplain"
+                android:layout_width="63dp"
+                android:layout_height="63dp"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
 
-    </LinearLayout>
+                android:text="7"
+                android:id="@+id/btn7"
+                android:onClick="append7"
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="50"
-        android:id="@+id/ll4"
-        android:visibility="invisible"
-        >
+                 />
 
-        <Button
-            style="@style/buttonssmallleft"
-            android:background="@drawable/roundplain"
-            android:layout_width="63dp"
-            android:layout_height="63dp"
-            android:textColor="#ffffff"
-            android:layout_gravity="center"
-            android:textSize="15dp"
-            android:text="7"
-            android:id="@+id/btn7"
-            android:onClick="append7"
+            <Button
+                style="@style/buttonstyle"
+                android:background="@drawable/roundplain"
+                android:layout_width="63dp"
+                android:layout_height="63dp"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="8"
+                android:id="@+id/btn8"
+                android:onClick="append8" />
 
-            android:textStyle="bold" />
+            <Button
+                style="@style/buttonstyle"
+                android:background="@drawable/roundplain"
+                android:layout_width="63dp"
+                android:layout_height="63dp"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="9"
+                android:id="@+id/btn9"
+                android:onClick="append9" />
 
-        <Button
-            style="@style/buttonstyle"
-            android:background="@drawable/roundplain"
-            android:layout_width="63dp"
-            android:layout_height="63dp"
-            android:textColor="#ffffff"
-            android:layout_gravity="center"
-            android:textSize="15dp"
-            android:text="8"
-            android:id="@+id/btn8"
-            android:onClick="append8"
+            <Button
+                style="@style/buttonstyle"
+                android:background="@drawable/roundplain"
+                android:layout_width="63dp"
+                android:layout_height="63dp"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="0"
+                android:id="@+id/btn0"
+                android:onClick="append0"
+                 />
+        </LinearLayout>
 
-            android:textStyle="bold" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="45"
+            android:id="@+id/ll5"
 
-        <Button
-            style="@style/buttonstyle"
-            android:background="@drawable/roundplain"
-            android:layout_width="63dp"
-            android:layout_height="63dp"
-            android:textColor="#ffffff"
-            android:layout_gravity="center"
-            android:textSize="15dp"
-            android:text="9"
-            android:id="@+id/btn9"
-            android:onClick="append9"
+            >
 
-            android:textStyle="bold" />
+            <Button
+                style="@style/buttonssmallleft"
+                android:background="@drawable/roundplain"
+                android:layout_width="63dp"
+                android:layout_height="63dp"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="4"
+                android:id="@+id/btn4"
+                android:onClick="append4"
 
-        <Button
-            style="@style/buttonstyle"
-            android:background="@drawable/roundplain"
-            android:layout_width="63dp"
-            android:layout_height="63dp"
-            android:textColor="#ffffff"
-            android:layout_gravity="center"
-            android:textSize="15dp"
-            android:text="0"
-            android:id="@+id/btn0"
-            android:onClick="append0"
-             />
-    </LinearLayout>
+                 />
 
+            <Button
+                style="@style/buttonstyle"
+                android:background="@drawable/roundplain"
+                android:layout_width="63dp"
+                android:layout_height="63dp"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:text="5"
+                android:id="@+id/btn5"
+                android:onClick="append5"
+               />
 
+            <Button
+                style="@style/buttonstyle"
+                android:background="@drawable/roundplain"
+                android:layout_width="63dp"
+                android:layout_height="63dp"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="6"
+                android:id="@+id/btn6"
+                android:onClick="append6"
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="50"
-        android:id="@+id/ll5"
-        android:visibility="invisible"
-        >
-
-        <Button
-            style="@style/buttonssmallleft"
-            android:background="@drawable/roundplain"
-            android:layout_width="63dp"
-            android:layout_height="63dp"
-            android:textColor="#ffffff"
-            android:layout_gravity="center"
-            android:textSize="15dp"
-            android:text="4"
-            android:id="@+id/btn4"
-            android:onClick="append4"
-
-             />
-
-        <Button
-            style="@style/buttonstyle"
-            android:background="@drawable/roundplain"
-            android:layout_width="63dp"
-            android:layout_height="63dp"
-            android:textColor="#ffffff"
-            android:layout_gravity="center"
-            android:textSize="15dp"
-            android:text="5"
-            android:id="@+id/btn5"
-            android:onClick="append5"
            />
 
-        <Button
-            style="@style/buttonstyle"
-            android:background="@drawable/roundplain"
-            android:layout_width="63dp"
-            android:layout_height="63dp"
-            android:textColor="#ffffff"
-            android:layout_gravity="center"
-            android:textSize="15dp"
-            android:text="6"
-            android:id="@+id/btn6"
-            android:onClick="append6"
+            <Button
+                style="@style/buttonstyle"
+                android:background="@drawable/roundcouners"
+                android:layout_width="63dp"
+                android:layout_height="63dp"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
 
-       />
+                android:text="C"
+                android:id="@+id/btnClear"
+                android:onClick="clearNumber"
+     />
+        </LinearLayout>
 
-        <Button
-            style="@style/buttonstyle"
-            android:background="@drawable/buttonborder"
-            android:layout_width="63dp"
-            android:layout_height="63dp"
-            android:textColor="#ffffff"
-            android:layout_gravity="center"
-            android:textSize="15dp"
-            android:text="C"
-            android:id="@+id/btnClear"
-            android:onClick="clearNumber"
-            android:textStyle="bold"
- />
-    </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="45"
+            android:id="@+id/ll6"
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="50"
-        android:id="@+id/ll6"
-        android:visibility="invisible"
-        >
+            >
 
-        <Button
-            style="@style/buttonssmallleft"
-            android:background="@drawable/roundplain"
-            android:layout_width="63dp"
-            android:layout_height="63dp"
-            android:textColor="#ffffff"
-            android:layout_gravity="center"
-            android:textSize="15dp"
-            android:text="1"
-            android:id="@+id/btn1"
-            android:onClick="append1"
-            />
+            <Button
+                style="@style/buttonssmallleft"
+                android:background="@drawable/roundplain"
+                android:layout_width="63dp"
+                android:layout_height="63dp"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="1"
+                android:id="@+id/btn1"
+                android:onClick="append1"
+                />
 
-        <Button
-            style="@style/buttonstyle"
-            android:background="@drawable/roundplain"
-            android:layout_width="63dp"
-            android:layout_height="63dp"
-            android:textColor="#ffffff"
-            android:layout_gravity="center"
-            android:textSize="15dp"
-            android:text="2"
-            android:id="@+id/btn2"
-            android:onClick="append2"
-            />
+            <Button
+                style="@style/buttonstyle"
+                android:background="@drawable/roundplain"
+                android:layout_width="63dp"
+                android:layout_height="63dp"
 
-        <Button
-            style="@style/buttonstyle"
-            android:background="@drawable/roundplain"
-            android:layout_width="63dp"
-            android:layout_height="63dp"
-            android:textColor="#ffffff"
-            android:layout_gravity="center"
-            android:textSize="15dp"
-            android:text="3"
-            android:onClick="append3"
-            android:id="@+id/btn3"
-            />
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:text="2"
+                android:id="@+id/btn2"
+                android:onClick="append2"
+                />
 
-        <Button
-            style="@style/buttonstyle"
-            android:background="@drawable/buttonborder"
-            android:layout_width="63dp"
-            android:layout_height="63dp"
-            android:textColor="#ffffff"
-            android:layout_gravity="center"
-            android:textSize="15dp"
-            android:text="E"
-            android:id="@+id/buttonEnterPin"
-            android:onClick="EnterPin"
-            android:textStyle="bold"
-            />
+            <Button
+                style="@style/buttonstyle"
+                android:background="@drawable/roundplain"
+                android:layout_width="63dp"
+                android:layout_height="63dp"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="3"
+                android:onClick="append3"
+                android:id="@+id/btn3"
+                />
 
+            <Button
+                style="@style/buttonstyle"
+                android:background="@drawable/roundcouners"
+                android:layout_width="63dp"
+                android:layout_height="63dp"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="E"
+                android:id="@+id/buttonEnterPin"
+                android:onClick="EnterPin"
+
+                />
+
+        </LinearLayout>
     </LinearLayout>
 
 

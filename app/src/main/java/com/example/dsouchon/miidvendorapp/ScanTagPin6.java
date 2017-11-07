@@ -16,6 +16,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Layout;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -58,14 +59,12 @@ public class ScanTagPin6 extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.scantagpin6);
             final TextView textViewAmountToPay = (TextView) findViewById(R.id.textViewAmountToPay);
-            textViewAmountToPay.setText(Local.read(this.getApplicationContext(), "TenderAmount"));
+            textViewAmountToPay.setText(Local.read(this.getApplicationContext(),"TenderAmount"));
             final AlertDialog ad = new AlertDialog.Builder(this).create();
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
 
-            ProgressBar mprogressbar;
-            mprogressbar = (ProgressBar) findViewById(R.id.progressbar);
-            mprogressbar.setVisibility(View.GONE);
+
 
         }
         catch (Exception e) {
@@ -390,14 +389,10 @@ public class ScanTagPin6 extends AppCompatActivity {
 
 
         //Show bottom panel
-        LinearLayout ll3 = (LinearLayout)findViewById(R.id.ll3);
-        LinearLayout ll4 = (LinearLayout)findViewById(R.id.ll4);
-        LinearLayout ll5 = (LinearLayout)findViewById(R.id.ll5);
-        LinearLayout ll6 = (LinearLayout)findViewById(R.id.ll6);
-        ll3.setVisibility(View.VISIBLE);
-        ll4.setVisibility(View.VISIBLE);
-        ll5.setVisibility(View.VISIBLE);
-        ll6.setVisibility(View.VISIBLE);
+
+        LinearLayout btnlayout = (LinearLayout)findViewById(R.id.Btnlayout);
+        btnlayout.setVisibility(View.VISIBLE);
+
     }
 
     public void EnterPin(View view) {
@@ -558,8 +553,11 @@ public class ScanTagPin6 extends AppCompatActivity {
             if(parcelables != null && parcelables.length > 0){
                 readTextFromMessage((NdefMessage)parcelables [0]);
 
-
-
+                  //changes text pogramatlcy "scan users tag" to "Enter PIN"
+                LinearLayout changelayouttview = (LinearLayout) findViewById(R.id.textscan);
+                 TextView textPin = (TextView) findViewById(R.id.textPin);
+                changelayouttview.setVisibility(View.GONE);
+                textPin.setVisibility(View.VISIBLE);
 
                 //MySOAPCallActivity cs = new MySOAPCallActivity();
                 try{

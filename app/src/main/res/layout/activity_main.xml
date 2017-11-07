@@ -1,12 +1,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical"
+
 
     tools:context="com.example.dsouchon.miidvendorapp.MainActivity"
     android:screenOrientation="portrait"
-    android:background="@drawable/backgroud_app"
+    android:background="#ffffff"
     android:keepScreenOn="true">
 
 
@@ -75,45 +77,72 @@
         <TextView
 
             style="@style/smallwordtextwhite"
-            android:background="#99106bd1"
+            android:background="#fbaa1a"
             android:layout_width="match_parent"
-            android:text="Event:"
+            android:text="Event Set:"
             android:id="@+id/lblEventName"
             android:layout_height="40dp"
-            android:gravity="left|center" />
+            android:gravity="left|center"
+            android:textStyle="bold"/>
 
         <TextView
 
             style="@style/smallwordtextwhite"
             android:background="#99000000"
             android:layout_width="match_parent"
-            android:text="Staff:"
+            android:text="Current Staff:"
             android:id="@+id/labelStaffCode"
             android:hint="No Staff Loaded"
             android:layout_height="40dp"
-            android:gravity="left|center" />
+            android:gravity="left|center"
+            android:textStyle="bold"/>
+
+        <TextView
+            style="@style/smallwordtext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="No Active Shift"
+            android:id="@+id/labelCurrentShift"
+            android:gravity="left|center"
+            android:background="#efefef"
+            android:textStyle="bold"
+            />
+
     </LinearLayout>
 
     <ViewFlipper
         android:layout_height="match_parent"
         android:id="@+id/viewFlipper"
         android:layout_width="match_parent"
-        android:layout_gravity="center_horizontal">
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:id="@+id/startscreen">
+            android:layout_weight="1"
+            android:id="@+id/startscreen"
+
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/info"
+                android:id="@+id/imageView5" />
+
             <TextView
                 style="@style/smallwordtext"
-                android:textColor="#ffffff"
-                android:text="Choose a optoin below"
-                android:layout_height="match_parent"
-                android:id="@+id/textView111"
-                android:layout_weight="1"
-                />
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="Select an option below. Availble options will be highlighted. \n Set vendor PIN for more options."
+                android:layout_height="wrap_content"
+                android:id="@+id/textView111" />
 
 
 
@@ -122,25 +151,63 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:id="@+id/staffloginlayout">
-
+            android:layout_weight="1"
+            android:id="@+id/seteventlayout">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/info"
+                android:id="@+id/imageView1" />
             <TextView
                 style="@style/smallwordtext"
-                android:textColor="#ffffff"
-                android:text="Start your shift with an existing staff ID"
-                android:layout_height="match_parent"
-                android:id="@+id/stafflogintext"
-                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="Select events that your vendor account has been linked to. Once you have set an event you will be able to add staff and start a shift."
+                android:layout_height="wrap_content"
+                android:id="@+id/seteventtext" />
+
+            <Button
+
+                android:id="@+id/buttonManageEvents"
+                android:onClick="SetEvent"
+                android:text="Set Event Now"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/staffaddlayout">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/info"
+                android:id="@+id/imageView2" />
+            <TextView
+                style="@style/smallwordtext"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="Create a new staff ID and PIN. This ID will be link to a shift report"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView12" />
 
         <Button
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:text="Staff Login"
-            android:id="@+id/buttonStaffLogin"
-            android:onClick="StaffLogin"
+            android:text="Create now"
+            android:id="@+id/buttonAddStaff"
+            android:onClick="AddStaff"
+            android:textStyle="bold"
             android:gravity="center" />
 
         </LinearLayout>
@@ -148,36 +215,85 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:id="@+id/tenderlayout">
+            android:layout_weight="1"
+            android:id="@+id/staffloginlayout">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/info"
+                android:id="@+id/imageView3" />
+            <TextView
+                style="@style/smallwordtext"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="Use and exiting staff ID to sign in a staff member onto the current shift."
+                android:layout_height="wrap_content"
+                android:id="@+id/textView13" />
 
+
+            <Button
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Staff Login"
+            android:id="@+id/buttonStaffLogin"
+            android:onClick="StaffLogin"
+            android:gravity="center"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/tenderlayout">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/info"
+                android:id="@+id/imageView4" />
+
+            <TextView
+                style="@style/smallwordtext"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="Great. Looks like you're all set. You can start making sales now!"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView14" />
         <Button
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:text="start transaction"
             android:id="@+id/buttonTransact"
             android:onClick="TenderAmount"
-            android:gravity="center"
-            android:layout_marginBottom="70dp"/>
+            android:textStyle="bold"
+            android:gravity="center" />
 
            </LinearLayout>
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_weight="1"
             android:id="@+id/endshiftlayout">
-
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/info"
+                android:id="@+id/imageView7" />
             <TextView
                 style="@style/smallwordtext"
                 android:textColor="#ffffff"
                 android:text="Close shift"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:id="@+id/closeshifttext"
 
-                android:layout_weight="1"
                 />
 
         <Button
@@ -187,6 +303,7 @@
             android:onClick="CloseShift"
             android:gravity="center"
             android:text="close shift"
+            android:textStyle="bold"
              />
 
         </LinearLayout>
@@ -194,80 +311,33 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:id="@+id/startshiftlayout">
 
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/info"
+                android:id="@+id/imageView59" />
+
             <TextView
                 style="@style/smallwordtext"
-                android:textColor="#ffffff"
-                android:text="Start your shift with an existing staff ID"
-                android:layout_height="match_parent"
-                android:id="@+id/starshifttext"
-                android:layout_weight="1"
-                />
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="Open a new shift."
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1111" />
 
             <Button
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:text="start shift"
                 android:id="@+id/buttonStartShift"
+                android:textStyle="bold"
                 android:onClick="StartShift"
                 android:gravity="center" />
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:id="@+id/staffaddlayout">
-            <TextView
-                style="@style/smallwordtext"
-                android:textColor="#ffffff"
-                android:text="Start your shift with an existing staff ID"
-                android:layout_height="match_parent"
-                android:id="@+id/textView12"
-                android:layout_weight="1"
-                />
-
-        <Button
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:text="Add Staff"
-            android:id="@+id/buttonAddStaff"
-            android:onClick="AddStaff"
-            android:gravity="center" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:id="@+id/seteventlayout">
-
-            <TextView
-                style="@style/smallwordtext"
-                android:textColor="#ffffff"
-                android:text="Choose an event that you have been added to"
-                android:layout_height="match_parent"
-                android:id="@+id/seteventtext"
-                android:layout_weight="1"
-                />
-
-            <Button
-
-                android:id="@+id/buttonManageEvents"
-                android:onClick="SetEvent"
-                android:text="Set Event"
-
-                android:layout_height="wrap_content"
-                android:layout_width="match_parent"
-                android:gravity="center"
-                />
         </LinearLayout>
 
 
@@ -277,8 +347,8 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0"
-
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_alignParentBottom="true">
 
         <LinearLayout
@@ -289,32 +359,35 @@
             >
 
             <Button
-                android:text="Close Shift"
+                android:text="Set Event"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/GoToCloseShiftBtn"
+                android:id="@+id/GoToSetEvenBtn"
                 android:layout_weight="1"
-                android:onClick="GoToCloseShift"
+                android:onClick="GoToSetEvent"
+                android:textStyle="bold"
                 android:textSize="8dp"
                 />
 
             <Button
-                android:text="StaffLogin"
+                android:text="Add Staff"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/GoToStaffLoginBtn"
+                android:id="@+id/GoToAddStaffBtn"
                 android:layout_weight="1"
-                android:onClick="GoToStaffLogin"
+                android:onClick="GoToToAddStaff"
+                android:textStyle="bold"
                 android:textSize="8dp"
                 />
 
             <Button
-                android:text="StartSale"
+                android:text="Start Shift"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/GoToStartSaleBtn"
+                android:id="@+id/GoToStartShiftBtn"
                 android:layout_weight="1"
-                android:onClick="GoToStartSale"
+                android:onClick="GoToStartShift"
+                android:textStyle="bold"
                 android:textSize="8dp"
                 />
         </LinearLayout>
@@ -327,34 +400,42 @@
             >
 
             <Button
-                android:text="Add Staff"
+                android:text="StaffLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/GoToAddStaffBtn"
+                android:id="@+id/GoToStaffLoginBtn"
                 android:layout_weight="1"
-                android:onClick="GoToToAddStaff"
+                android:onClick="GoToStaffLogin"
+                android:textStyle="bold"
                 android:textSize="8dp"
                 />
 
             <Button
-                android:text="Start Shift"
+                android:text="StartSale"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/GoToStartShiftBtn"
+                android:id="@+id/GoToStartSaleBtn"
                 android:layout_weight="1"
-                android:onClick="GoToStartShift"
+                android:onClick="GoToStartSale"
+                android:textStyle="bold"
+
                 android:textSize="8dp"
                 />
+
             <Button
-                android:text="Set Event"
+                android:text="Close Shift"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/GoToSetEvenBtn"
+                android:id="@+id/GoToCloseShiftBtn"
                 android:layout_weight="1"
-                android:onClick="GoToSetEvent"
+                android:onClick="GoToCloseShift"
+                android:textStyle="bold"
+
                 android:textSize="8dp"
                 />
+
         </LinearLayout>
+
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -369,6 +450,8 @@
                 android:onClick="VendorLogin"
                 android:text="@string/password_button"
                 android:gravity="center"
+
+                android:textStyle="bold"
                 android:textAllCaps="false"
                 />
 

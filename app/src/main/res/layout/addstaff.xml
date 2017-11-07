@@ -8,21 +8,20 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/backgroud_app">
+        android:background="#ffffff">
 
         <LinearLayout
             android:visibility="gone"
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="105"
-            >
+            android:layout_height="match_parent">
 
             <TextView
                 style="@style/smallwordtext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:textColor="#000000"
+                android:textStyle="bold"
                 android:text="No Event Set"
                 android:id="@+id/labelCurrentEvent"
                 android:textSize="15dp"
@@ -32,7 +31,8 @@
                 style="@style/smallwordtext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:textColor="#000000"
+                android:textStyle="bold"
                 android:textSize="15dp"
                 android:text="Staff: "
                 android:id="@+id/textView3"
@@ -41,43 +41,49 @@
         </LinearLayout>
 
         <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#99000000"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="Staff ID's in use"
+                android:textColor="#ffffff"
+                android:id="@+id/editText3"
+                android:layout_weight="1"
+
+                android:textSize="15dp"
+                android:layout_marginLeft="15dp" />
+
+            <Spinner
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerStaff"
+                android:backgroundTint="#ffffff"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
 
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
             >
 
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
+            <TextView
+                style="@style/smallwordtext"
+                android:text="Enter a new staff login details  or you can continue to start a new shift. \n To reset Staff PIN use existing staff ID with new staff PIN"
                 android:layout_height="wrap_content"
-                android:background="#99000000"
-                android:padding="5dp"
-                android:layout_marginBottom="20dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:inputType="textPersonName"
-                    android:text="Staff codes in use"
-                    android:textColor="#ffffff"
-                    android:id="@+id/editText3"
-                    android:layout_weight="1"
-
-                    android:textSize="15dp"
-                    android:layout_marginLeft="15dp" />
-
-                <Spinner
-
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/spinnerStaff"
-                    android:backgroundTint="#ffffff"
-                    android:layout_weight="1" />
-            </LinearLayout>
-
-
+                android:id="@+id/seteventtext"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
 
 
             <EditText
@@ -88,10 +94,10 @@
                 android:hint="Enter new staff ID"
                 android:layout_row="3"
                 android:inputType="number"
-                android:backgroundTint="#ffffff"
-                android:textColor="#ffffff"
-                android:textColorHint="#ffffff"
-                android:layout_marginTop="20dp" />
+                android:backgroundTint="#000000"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textColorHint="#000000" />
 
             <EditText
                 style="@style/passwordtext"
@@ -102,11 +108,11 @@
                 android:id="@+id/editStaffPin"
                 android:layout_row="4"
                 android:hint="Enter new staff pin"
-                android:textColorHint="#ffffff"
-                android:backgroundTint="#ffffff"
-                android:textColor="#ffffff"
-                android:layout_marginRight="20dp"
-                android:layout_marginLeft="20dp"
+                android:textColorHint="#000000"
+                android:backgroundTint="#000000"
+                android:textColor="#000000"
+                android:textStyle="bold"
+
                />
 
             <Button
@@ -115,66 +121,37 @@
                 android:text="Confirm New Staff ID"
                 android:id="@+id/buttonAddStaff"
                 android:background="@drawable/ovalcornersfull"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-
                 android:textSize="15dp"
-                android:textColor="#fff"
-                android:onClick="AddStaff"
-                android:layout_marginTop="20dp"
-                android:layout_weight="105" />
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginTop="30dp">
-
-            <TextView
-                android:text="Or continue to new shift."
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView6"
-                android:textColor="#ffffff"
-                android:layout_marginTop="3dp"
-                android:layout_marginBottom="3dp"
-               android:textSize="15dp"
-                android:gravity="center"
-                />
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:onClick="AddStaff" />
 
             <Button
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text=" OVERWRITE PIN"
+                android:text=" Overwrite Staff PIN"
                 android:id="@+id/buttonOverwritePin"
                 android:background="@drawable/ovalcornersfull"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-
                 android:textSize="15dp"
-                android:textColor="#fff"
+                android:textColor="#000000"
+                android:textStyle="bold"
                 android:onClick="OverwritePin"
                 android:layout_marginTop="20dp"
                 android:visibility="gone"/>
 
             <Button
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="START A NEW SHIFT"
+                android:text="Continue to new shift"
                 android:id="@+id/buttonMainMenu"
-                android:background="@drawable/ovalcornersstroke"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-
+                android:background="@drawable/ovalcornersfull"
                 android:textSize="15dp"
-                android:textColor="#ffffff"
-
+                android:textColor="#000000"
+                android:textStyle="bold"
                 android:onClick="StartShift"
                 android:layout_marginTop="20dp" />
+
+
         </LinearLayout>
 
     </LinearLayout>

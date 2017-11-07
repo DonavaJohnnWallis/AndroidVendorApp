@@ -34,9 +34,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
+        TextView labelCurrentShift = (TextView)findViewById(R.id.labelCurrentShift);
 
+        try {
 
+            labelCurrentShift.setText("Shift No:" + Local.read(getApplicationContext(), "ShiftNo"));
 
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
 
 

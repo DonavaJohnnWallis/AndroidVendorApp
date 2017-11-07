@@ -154,6 +154,14 @@ public class VendorLogin1 extends AppCompatActivity {
 
         //check if vendor logging in is the same for the current shift
         String strVendorCode = editVendorCode.getText().toString();
+        String strVendorPin = editVendorPin.getText().toString();
+
+        if(strVendorPin.length()<= 0) {
+
+            Toast.makeText(VendorLogin1.this, "Enter vendor PIN", Toast.LENGTH_SHORT).show();
+            return;
+
+        }
         if(strVendorCode.equals( Local.Get(getApplicationContext(), "VendorCode")) || Local.Get(getApplicationContext(), "VendorLoggedIn").equals("0") ) {
 
 
@@ -177,6 +185,15 @@ public class VendorLogin1 extends AppCompatActivity {
 
 
         }
+
+        if(strVendorCode.length()<= 0) {
+
+            Toast.makeText(VendorLogin1.this, "Enter vendor code", Toast.LENGTH_SHORT).show();
+
+        }
+
+
+
 
     }
 

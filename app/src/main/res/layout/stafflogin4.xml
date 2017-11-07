@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroud_app"
+    android:background="#ffffff"
     android:keepScreenOn="true">
 
     <LinearLayout
@@ -38,9 +38,10 @@
             style="@style/passwordtext"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Enter staff id and password."
+            android:text="Enter Staff ID"
             android:id="@+id/textView4"
-            android:background="#000000"
+            android:textColor="#000000"
+            android:textStyle="bold"
             android:layout_margin="0dp" />
     </LinearLayout>
 
@@ -81,9 +82,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/editStaffCode"
-            android:textColorHint="#ffffff"
+            android:textColorHint="#000000"
             android:inputType="number"
-            android:backgroundTint="#ffffff"
+            android:backgroundTint="#000000"
+            android:textColor="#000000"
+            android:textStyle="bold"
             android:hint="Enter staff ID" />
 
         <EditText
@@ -93,8 +96,10 @@
             android:inputType="numberPassword"
             android:ems="10"
             android:id="@+id/editStaffPin"
-            android:backgroundTint="#ffffff"
-            android:textColorHint="#ffffff"
+            android:backgroundTint="#000000"
+            android:textColorHint="#000000"
+            android:textColor="#000000"
+            android:textStyle="bold"
             android:hint="Enter password" />
 
         <Button
@@ -107,7 +112,8 @@
             android:layout_marginBottom="20dp"
            android:background="@drawable/ovalcornersfull"
             android:textSize="15dp"
-            android:textColor="#ffffff"
+            android:textColor="#000000"
+            android:textStyle="bold"
             android:layout_marginTop="20dp"
             android:onClick="StaffLogin" />
 

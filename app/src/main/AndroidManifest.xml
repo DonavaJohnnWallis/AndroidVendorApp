@@ -23,7 +23,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="MIID CASHLESS SERVICES">
+            android:label="Mi-id Main Options">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -43,7 +43,7 @@
             android:label="MainActivity21" />
         <activity
             android:name=".SetupEvent"
-            android:label="EVENT SETUP" />
+            android:label="Event Setup" />
         <activity
             android:name=".TenderAmount5"
             android:label="TENDER AMOUNT" />
@@ -58,7 +58,7 @@
             android:label="SCAN TAG / ENTER PIN" />
         <activity
             android:name=".VendorLogin1"
-            android:label="VENDOR AUTHORISATION" />
+            android:label="Vendor Login" />
         <activity
             android:name=".SetEvent2"
             android:label="EVENT SETUP" />
@@ -67,7 +67,7 @@
             android:label="START SHIFT" />
         <activity
             android:name=".AddStaff"
-            android:label="ADD STAFF OR START SHIFT" />
+            android:label="Add staff ID" />
         <activity
             android:name=".StaffLogin4"
             android:label="STAFF LOGIN" />
