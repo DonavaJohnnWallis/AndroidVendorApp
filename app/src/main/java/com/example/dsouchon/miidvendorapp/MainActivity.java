@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         else
 
-        { labelStaffCode.setText("Staff Code:" + staffCode); }
+        { labelStaffCode.setText("Current Staff ID:" + staffCode); }
 
 
 
@@ -160,29 +160,36 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button buttonAddStaff = (Button)this.findViewById(R.id.buttonAddStaff);
         buttonAddStaff.setEnabled(EnableButton("AddStaff"));
         //disables child button
-        Button buttonEndShiftbtn1 = (Button)this.findViewById(R.id.GoToAddStaffBtn);
-        buttonEndShiftbtn1.setEnabled(EnableButton("AddStaff"));
+        Button buttonaddstaffbtn1 = (Button)this.findViewById(R.id.GoToAddStaffBtn);
+        buttonaddstaffbtn1.setEnabled(EnableButton("AddStaff"));
 
 
         Button buttonStartShift = (Button)this.findViewById(R.id.buttonStartShift);
         buttonStartShift.setEnabled(EnableButton("StartShift"));
         //disables child button
-        Button buttonEndShiftbtn2 = (Button)this.findViewById(R.id.GoToStartShiftBtn);
-        buttonEndShiftbtn2.setEnabled(EnableButton("StartShift"));
+        Button buttonStartShift2 = (Button)this.findViewById(R.id.GoToStartShiftBtn);
+        buttonStartShift2.setEnabled(EnableButton("StartShift"));
 
 
         Button buttonTransact = (Button)this.findViewById(R.id.buttonTransact);
         buttonTransact.setEnabled(EnableButton("Tender"));
         //disables child button
-        Button buttonEndShiftbtn4 = (Button)this.findViewById(R.id.GoToStartSaleBtn);
-        buttonEndShiftbtn4.setEnabled(EnableButton("Tender"));
+        Button buttonTransact2 = (Button)this.findViewById(R.id.GoToStartSaleBtn);
+        buttonTransact2.setEnabled(EnableButton("Tender"));
 
 
         Button buttonStaffLogin = (Button)this.findViewById(R.id.buttonStaffLogin);
         buttonStaffLogin.setEnabled(EnableButton("StaffLogin"));
         //disables child button
-        Button buttonEndShiftbtn5 = (Button)this.findViewById(R.id.GoToStaffLoginBtn);
-        buttonEndShiftbtn5.setEnabled(EnableButton("StaffLogin"));
+        Button buttonStaffLogin2 = (Button)this.findViewById(R.id.GoToStaffLoginBtn);
+        buttonStaffLogin2.setEnabled(EnableButton("StaffLogin"));
+
+        Button buttonStafflogoff = (Button)this.findViewById(R.id.stafflogoffbtn);
+        buttonStafflogoff.setEnabled(EnableButton("StaffLoginOff"));
+        //disables child button
+        Button buttonStafflogoff2 = (Button)this.findViewById(R.id.stafflogoffbtn);
+        buttonStafflogoff2.setEnabled(EnableButton("StaffLogin"));
+
 
 
         Button buttonEndShift = (Button)this.findViewById(R.id.buttonEndShift);
@@ -277,19 +284,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         .show();
                 break;
             // action with ID action_settings was selected
-            case R.id.action_staffLogoff:
-                //Log off staff
-                Local.Set(getApplicationContext(), "StaffCode", "0");
-                Local.Set(getApplicationContext(), "StaffID", "0");
-                Local.Set(getApplicationContext(), "StaffLoggedIn","0");
+            // case R.id.action_staffLogoff:
+            // Log off staff
+            // Local.Set(getApplicationContext(), "StaffCode", "0");
+            // Local.Set(getApplicationContext(), "StaffID", "0");
+            // Local.Set(getApplicationContext(), "StaffLoggedIn","0");
+            // Toast.makeText(this, "Staff logged off.", Toast.LENGTH_SHORT)
+            //  .show();
+            // EnableDisableButtons();
+            //  break;
 
-                Toast.makeText(this, "Staff logged off.", Toast.LENGTH_SHORT)
-
-                                .show();
-
-                EnableDisableButtons();
-
-                break;
             case R.id.action_adminLogin:
                 //Toast.makeText(this, "Login selected", Toast.LENGTH_SHORT)
 
@@ -313,6 +317,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //return super.onOptionsItemSelected(item);
     }
 
+    public void stafflougoff(View view) {
+
+        //Log off staff
+        Local.Set(getApplicationContext(), "StaffCode", "0");
+        Local.Set(getApplicationContext(), "StaffID", "0");
+        Local.Set(getApplicationContext(), "StaffLoggedIn","0");
+
+        Toast.makeText(this, "Staff logged off.", Toast.LENGTH_SHORT)
+
+                .show();
+
+        EnableDisableButtons();
+
+        TextView myTextView = (TextView) findViewById(R.id.labelStaffCode);
+        myTextView.setText(null);
+
+    }
 
 
     @Override
@@ -497,6 +518,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case "Refund" : if(Local.isSet(getApplicationContext(), "EventSet") && Local.isSet(getApplicationContext(), "StaffAdded") && Local.isSet(getApplicationContext(), "StaffLoggedIn") && Local.isSet(getApplicationContext(), "ShiftStarted") && Local.isSet(getApplicationContext(), "VendorLoggedIn"))
                 ret = true;
                 break;
+
+
 
             case "SuperVisorLogin" :
                 ret=true;

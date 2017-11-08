@@ -88,9 +88,10 @@
         <TextView
 
             style="@style/smallwordtextwhite"
-            android:background="#99000000"
+            android:background="#000000"
+            android:textColorHint="#ffffff"
             android:layout_width="match_parent"
-            android:text="Current Staff:"
+            android:text="Current Staff ID:"
             android:id="@+id/labelStaffCode"
             android:hint="No Staff Loaded"
             android:layout_height="40dp"
@@ -450,7 +451,19 @@
                 android:onClick="VendorLogin"
                 android:text="@string/password_button"
                 android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                />
 
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/stafflogoffbtn"
+                android:onClick="stafflougoff"
+                android:text="Staff Logout"
+                android:gravity="center"
+                 android:layout_weight="1"
                 android:textStyle="bold"
                 android:textAllCaps="false"
                 />
