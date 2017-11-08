@@ -88,7 +88,7 @@
         <TextView
 
             style="@style/smallwordtextwhite"
-            android:background="#000000"
+            android:background="#575757"
             android:textColorHint="#ffffff"
             android:layout_width="match_parent"
             android:text="Current Staff ID:"
@@ -245,6 +245,40 @@
 
         </LinearLayout>
 
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/staffloginofflayout">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/info"
+                android:id="@+id/imageView51" />
+            <TextView
+                style="@style/smallwordtext"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="Log off current staff memeber"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView141" />
+
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/stafflogoffbtn"
+                android:onClick="stafflougoff"
+                android:text="Staff Logout"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
@@ -337,6 +371,39 @@
                 android:id="@+id/buttonStartShift"
                 android:textStyle="bold"
                 android:onClick="StartShift"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/TagDetailslayout">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/info"
+                android:id="@+id/imageView511" />
+
+            <TextView
+                style="@style/smallwordtext"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="Scan users tag for details"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView113" />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Continue"
+                android:id="@+id/buttonTagDetails"
+                android:textStyle="bold"
+                android:onClick="GotoTagDetail"
                 android:gravity="center" />
 
         </LinearLayout>
@@ -447,28 +514,47 @@
             <Button
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-                android:id="@+id/buttonVendorLogin"
-                android:onClick="VendorLogin"
-                android:text="@string/password_button"
+                android:id="@+id/stafflogoff"
+                android:onClick="stafflogouTNew"
+                android:text="Staff Logout"
                 android:gravity="center"
                 android:layout_weight="1"
                 android:textStyle="bold"
                 android:textAllCaps="false"
+                android:textSize="8dp"
+
                 />
 
             <Button
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-                android:id="@+id/stafflogoffbtn"
-                android:onClick="stafflougoff"
-                android:text="Staff Logout"
+                android:id="@+id/ViewDetailsBtn"
+                android:onClick="Tagdetails"
+                android:text="Tag Details"
                 android:gravity="center"
-                 android:layout_weight="1"
+                android:layout_weight="1"
                 android:textStyle="bold"
                 android:textAllCaps="false"
+                android:textSize="8dp"
+                />
+
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/buttonVendorLogin"
+                android:onClick="VendorLogin"
+                android:text="More Options"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textSize="8dp"
                 />
 
             </LinearLayout>
+
+
 
         <LinearLayout
             android:orientation="horizontal"

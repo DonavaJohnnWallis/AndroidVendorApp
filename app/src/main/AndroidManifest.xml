@@ -77,6 +77,10 @@
         <activity
             android:name=".PaymentResultRefund7"
             android:label="Payment Result Refund" />
+
+        <activity
+            android:name=".UserInfo"
+            android:label="Get Tag Information" />
         <activity
             android:name=".ReprintSlip8"
             android:label="Reprint Slip" />

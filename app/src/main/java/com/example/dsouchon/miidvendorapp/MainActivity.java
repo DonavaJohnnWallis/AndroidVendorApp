@@ -187,8 +187,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button buttonStafflogoff = (Button)this.findViewById(R.id.stafflogoffbtn);
         buttonStafflogoff.setEnabled(EnableButton("StaffLoginOff"));
         //disables child button
-        Button buttonStafflogoff2 = (Button)this.findViewById(R.id.stafflogoffbtn);
-        buttonStafflogoff2.setEnabled(EnableButton("StaffLogin"));
+        Button buttonStafflogoff2 = (Button)this.findViewById(R.id.stafflogoff);
+        buttonStafflogoff2.setEnabled(EnableButton("StaffLoginOff"));
 
 
 
@@ -243,6 +243,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
 
+    public void stafflogouTNew(View view) {
+        viewFlipper.setDisplayedChild(7);
+        viewFlipper.setDisplayedChild(viewFlipper.indexOfChild(findViewById(R.id.staffloginofflayout)));
+    }
+
+
+    public void Tagdetails(View view) {
+        viewFlipper.setDisplayedChild(8);
+        viewFlipper.setDisplayedChild(viewFlipper.indexOfChild(findViewById(R.id.TagDetailslayout)));
+    }
 
 
 
@@ -280,7 +290,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (item.getItemId()) {
             // action with ID action_refresh was selected
             case R.id.action_settings:
-                Toast.makeText(this, "Settings selected", Toast.LENGTH_SHORT)
+                Toast.makeText(this, "Settings selected", Toast.LENGTH_LONG)
                         .show();
                 break;
             // action with ID action_settings was selected
@@ -324,7 +334,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Local.Set(getApplicationContext(), "StaffID", "0");
         Local.Set(getApplicationContext(), "StaffLoggedIn","0");
 
-        Toast.makeText(this, "Staff logged off.", Toast.LENGTH_SHORT)
+        Toast.makeText(this, "Staff logged off.", Toast.LENGTH_LONG)
 
                 .show();
 
@@ -339,7 +349,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onBackPressed() {
         // your code.
-        Toast.makeText(MainActivity.this, "To close app select your phones native menu button.", Toast.LENGTH_SHORT).show();
+        Toast.makeText(MainActivity.this, "To close app select your phones native menu button.", Toast.LENGTH_LONG).show();
     }
 
 
@@ -507,6 +517,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 ret = true;
                 break;
 
+            case "StaffLoginOff" : if(Local.isSet(getApplicationContext(), "VendorLoggedIn") && Local.isSet(getApplicationContext(), "EventSet") && Local.isSet(getApplicationContext(), "StaffAdded") && Local.isSet(getApplicationContext(), "StaffLoggedIn"))
+                ret = true;
+                break;
+
             case "Tender" : if(Local.isSet(getApplicationContext(), "EventSet") && Local.isSet(getApplicationContext(), "StaffAdded") && Local.isSet(getApplicationContext(), "StaffLoggedIn") && Local.isSet(getApplicationContext(), "ShiftStarted"))
                 ret = true;
                 break;
@@ -547,6 +561,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
+    public void GotoTagDetail (View view) {
+
+        Intent intent = new Intent(MainActivity.this, UserInfo.class);
+        finish();
+
+        startActivity(intent);
+    }
 
 
     //Webmethod functions start

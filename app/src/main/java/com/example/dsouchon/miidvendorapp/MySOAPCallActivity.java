@@ -65,7 +65,39 @@ import org.ksoap2.transport.HttpTransportSE;
         {
         }
 
+        public String CallUser(String TagNumber)
+        {
+            SoapObject request = new SoapObject(WSDL_TARGET_NAMESPACE,GetUserForTag);
+            PropertyInfo pi=new PropertyInfo();
+            pi.setName("TagNumber");
+            pi.setValue(TagNumber);
+            pi.setType(String.class);
+            request.addProperty(pi);
+            //pi=new PropertyInfo();
+            //pi.setName("b");
+            //pi.setValue(b);
+            //pi.setType(Integer.class);
+            //request.addProperty(pi);
 
+            SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(
+                    SoapEnvelope.VER11);
+            envelope.dotNet = true;
+
+            envelope.setOutputSoapObject(request);
+
+            HttpTransportSE httpTransport = new HttpTransportSE(SOAP_ADDRESS);
+            Object response=null;
+            try
+            {
+                httpTransport.call(SOAP_ACTION, envelope);
+                response = envelope.getResponse();
+            }
+            catch (Exception exception)
+            {
+                response=exception.toString();
+            }
+            return response.toString();
+        }
         //New Methods
 
         //1. RegisterDevice0
