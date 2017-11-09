@@ -3,23 +3,18 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
-    android:keepScreenOn="true">
+    android:keepScreenOn="true"
+>
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone"
 
         >
-
-        <TextView
-            style="@style/passwordtext"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Authorisation Required"
-            android:id="@+id/textView7"
-            android:background="#000000"
-            android:layout_margin="0dp" />
 
         <TextView
             style="@style/smallwordtext"
@@ -54,9 +49,16 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp">
 
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/info"
+            android:id="@+id/imageView5" />
+
         <TextView
             style="@style/smallwordtext"
-            android:text="Enter Vendor PIN to authorise action"
+            android:text="Enter Vendor PIN to start a new shift. A shift records all transactions as well as staff ID's"
             android:layout_height="wrap_content"
             android:id="@+id/seteventtext"
             android:textColor="#000000"
@@ -71,7 +73,7 @@
             android:textColor="#000000"
             android:textStyle="bold"
             android:textColorHint="#000000"
-            android:backgroundTint="#000000"
+            android:backgroundTint="#efefef"
              />
 
         <EditText
@@ -86,7 +88,8 @@
             android:textColor="#000000"
             android:textStyle="bold"
             android:textColorHint="#000000"
-            android:backgroundTint="#000000"
+            android:backgroundTint="#efefef"
+            android:fontFamily="sans-serif"
             />
 
         <Button

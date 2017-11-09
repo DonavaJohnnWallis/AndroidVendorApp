@@ -336,21 +336,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Volumes/Untitled/GitRepo/AndroidVendorApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="e3d791b42eaa90416cd0b2d2e608092794a3baa4">
-        <dex dex="/Volumes/Untitled/GitRepo/AndroidVendorApp/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-ads-7.0.0_6a88e2d757848b913fa87bc2673317b204da825c.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Volumes/Untitled/GitRepo/AndroidVendorApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.0.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="41b3870cbe5fa546d8095b5b89d42cb69f3dd175">
         <dex dex="/Volumes/Untitled/GitRepo/AndroidVendorApp/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-drive-7.0.0_d522229814393a2f426c6e4d27c3e638074fd5ff.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Untitled/GitRepo/AndroidVendorApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e3d791b42eaa90416cd0b2d2e608092794a3baa4">
+        <dex dex="/Volumes/Untitled/GitRepo/AndroidVendorApp/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-ads-7.0.0_6a88e2d757848b913fa87bc2673317b204da825c.jar" />
     </item>
     <item
         is-multidex="false"

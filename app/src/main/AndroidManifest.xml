@@ -87,6 +87,7 @@
         <activity
             android:name=".CloseShift9"
             android:label="Close Shift" />
+
         <activity android:name=".Reset101"></activity>
         <activity
             android:name=".Pop"

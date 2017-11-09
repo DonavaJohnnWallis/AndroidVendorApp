@@ -9,6 +9,7 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:visibility="gone"
 
         >
 
@@ -45,38 +46,29 @@
             android:layout_margin="0dp" />
     </LinearLayout>
 
+
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="33">
+        android:layout_weight="33"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_gravity="center">
-
-            <ImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:id="@+id/imageView"
-                android:background="@drawable/staff"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                />
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="33">
-
-
+            android:src="@drawable/info"
+            android:id="@+id/imageView5" />
+        <TextView
+            style="@style/smallwordtext"
+            android:text="Use an existing staff ID and PIN to log a staff member onto current shift."
+            android:layout_height="wrap_content"
+            android:id="@+id/seteventtext"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
         <EditText
             style="@style/passwordtext"
             android:layout_width="match_parent"
@@ -84,7 +76,7 @@
             android:id="@+id/editStaffCode"
             android:textColorHint="#000000"
             android:inputType="number"
-            android:backgroundTint="#000000"
+            android:backgroundTint="#efefef"
             android:textColor="#000000"
             android:textStyle="bold"
             android:hint="Enter staff ID" />
@@ -96,11 +88,12 @@
             android:inputType="numberPassword"
             android:ems="10"
             android:id="@+id/editStaffPin"
-            android:backgroundTint="#000000"
+            android:backgroundTint="#efefef"
             android:textColorHint="#000000"
             android:textColor="#000000"
             android:textStyle="bold"
-            android:hint="Enter password" />
+            android:hint="Enter password"
+            android:fontFamily="sans-serif"/>
 
         <Button
             android:layout_width="fill_parent"

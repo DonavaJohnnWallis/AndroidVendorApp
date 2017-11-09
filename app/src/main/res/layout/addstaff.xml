@@ -2,13 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:keepScreenOn="true">
+    android:keepScreenOn="true"
+    android:background="#ffffff">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#ffffff">
+        android:background="#ffffff"
+       >
 
         <LinearLayout
             android:visibility="gone"
@@ -55,7 +57,7 @@
                 android:textColor="#ffffff"
                 android:id="@+id/editText3"
                 android:layout_weight="1"
-
+                android:textStyle="bold"
                 android:textSize="15dp"
                 android:layout_marginLeft="15dp" />
 
@@ -76,10 +78,15 @@
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
             >
-
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/info"
+                android:id="@+id/imageView5" />
             <TextView
                 style="@style/smallwordtext"
-                android:text="Enter a new staff login details  or you can continue to start a new shift. \n To reset Staff PIN use existing staff ID with new staff PIN"
+                android:text="Enter new staff login details or continue to start a new shift. To reset Staff PIN use existing staff ID with new staff PIN"
                 android:layout_height="wrap_content"
                 android:id="@+id/seteventtext"
                 android:textColor="#000000"
@@ -94,10 +101,11 @@
                 android:hint="Enter new staff ID"
                 android:layout_row="3"
                 android:inputType="number"
-                android:backgroundTint="#000000"
+                android:backgroundTint="#efefef"
                 android:textColor="#000000"
                 android:textStyle="bold"
-                android:textColorHint="#000000" />
+                android:textColorHint="#000000"
+                />
 
             <EditText
                 style="@style/passwordtext"
@@ -107,11 +115,12 @@
                 android:ems="10"
                 android:id="@+id/editStaffPin"
                 android:layout_row="4"
-                android:hint="Enter new staff pin"
+                android:hint="Enter new staff PIN"
                 android:textColorHint="#000000"
-                android:backgroundTint="#000000"
+                android:backgroundTint="#efefef"
                 android:textColor="#000000"
                 android:textStyle="bold"
+                android:fontFamily="sans-serif"
 
                />
 

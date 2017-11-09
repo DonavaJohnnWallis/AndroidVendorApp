@@ -6,10 +6,12 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,7 +26,7 @@ import java.util.List;
 /**
  * Created by dsouchon on 11/26/2015.
  */
-public class CloseShift9  extends Activity {
+public class CloseShift9  extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
@@ -37,17 +39,42 @@ public class CloseShift9  extends Activity {
         setContentView(R.layout.closeshift9);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
+        ProgressBar mprogressbar;
+        mprogressbar = (ProgressBar) findViewById(R.id.progressbar);
+        mprogressbar.setVisibility(View.INVISIBLE);
+
     }
 
-    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_payment, menu);
         return true;
     }
 
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
 
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.clearpaymentbtn){
+            startActivity(new Intent(this,TenderAmount5.class));
+        }
+
+        if (id == R.id.action_vendorLogin){
+            startActivity(new Intent(this,MainActivity.class));
+        }
+
+
+        return super.onOptionsItemSelected(item);
+
+
+        //return super.onOptionsItemSelected(item);
+    }
 
 
 
@@ -62,7 +89,9 @@ public class CloseShift9  extends Activity {
 
         MySOAPCallActivity cs = new MySOAPCallActivity();
         try {
-
+            ProgressBar mprogressbar;
+            mprogressbar = (ProgressBar) findViewById(R.id.progressbar);
+            mprogressbar.setVisibility(View.VISIBLE);
             final GlobalClass globalVariable = (GlobalClass) getApplicationContext();
 
             Integer VendorID = Integer.parseInt(Local.read(getApplicationContext(), "VendorID"));
@@ -119,7 +148,7 @@ public class CloseShift9  extends Activity {
                     Local.write(getApplicationContext(), "LastScreenMessage", result);
                     final TextView lblResult = (TextView)findViewById(R.id.lblResult);
                     lblResult.setText("Shift Closed Successfully. See printer for EOD report.");
-                    final TextView printerIP = (TextView)findViewById(R.id.txtPrinterIP);
+                   // final TextView printerIP = (TextView)findViewById(R.id.txtPrinterIP);
 
                     //new PrintEODReport().execute(result.toString(), printerIP.getText().toString());
 
@@ -133,11 +162,19 @@ public class CloseShift9  extends Activity {
                     Local.Set(getApplicationContext(), "VendorID", "0");
                     Local.Set(getApplicationContext(), "ShiftStarted", "0");
 
+                    ProgressBar mprogressbar;
+                    mprogressbar = (ProgressBar) findViewById(R.id.progressbar);
+                    mprogressbar.setVisibility(View.INVISIBLE);
+
+
                 }
                 else
                 {
                     final TextView lblResult = (TextView)findViewById(R.id.lblResult);
-                    lblResult.setText(result);
+                    lblResult.setText("Failed Connection: " + result + " \n Please try again.");
+                    ProgressBar mprogressbar;
+                    mprogressbar = (ProgressBar) findViewById(R.id.progressbar);
+                    mprogressbar.setVisibility(View.INVISIBLE);
 
                 }
             } catch (IOException e) {

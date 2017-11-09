@@ -116,10 +116,10 @@ public class StaffLogin4 extends AppCompatActivity {
             new CallSoapStaffLogin4().execute(params);
 
         } catch (Exception ex) {
-            ad.setTitle("Staff Login Error!");
-            ad.setMessage(ex.toString());
+           // ad.setTitle("Staff Login Error!");
+         //   ad.setMessage(ex.toString());
         }
-        ad.show();
+        // ad.show();
 
 
     }

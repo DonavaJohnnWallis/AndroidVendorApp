@@ -364,7 +364,7 @@ public class AddStaff extends AppCompatActivity {
                     }
 
                     // Step 2: Create and fill an ArrayAdapter with a bunch of "State" objects
-                    ArrayAdapter spinnerArrayAdapter = new ArrayAdapter(spinner.getContext() , R.layout.spinnerstyle, spinnerArray);
+                    ArrayAdapter spinnerArrayAdapter = new ArrayAdapter(spinner.getContext() , R.layout.spinnerwhite, spinnerArray);
 
 
                     // Step 3: Tell the spinner about our adapter

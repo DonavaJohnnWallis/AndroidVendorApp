@@ -141,7 +141,7 @@
                 style="@style/smallwordtext"
                 android:textColor="#000000"
                 android:textStyle="bold"
-                android:text="Select an option below. Availble options will be highlighted. \n Set vendor PIN for more options."
+                android:text="Select an option below. Available options will be highlighted. Set vendor PIN for more options."
                 android:layout_height="wrap_content"
                 android:id="@+id/textView111" />
 
@@ -198,14 +198,14 @@
                 style="@style/smallwordtext"
                 android:textColor="#000000"
                 android:textStyle="bold"
-                android:text="Create a new staff ID and PIN. This ID will be link to a shift report"
+                android:text="Add a new staff ID and PIN. This ID will be linked to a shift report"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView12" />
 
         <Button
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:text="Create now"
+            android:text="Add a new ID now"
             android:id="@+id/buttonAddStaff"
             android:onClick="AddStaff"
             android:textStyle="bold"
@@ -229,7 +229,7 @@
                 style="@style/smallwordtext"
                 android:textColor="#000000"
                 android:textStyle="bold"
-                android:text="Use and exiting staff ID to sign in a staff member onto the current shift."
+                android:text="Use and exiting staff ID to log a staff member onto the current shift."
                 android:layout_height="wrap_content"
                 android:id="@+id/textView13" />
 
@@ -262,7 +262,7 @@
                 style="@style/smallwordtext"
                 android:textColor="#000000"
                 android:textStyle="bold"
-                android:text="Log off current staff memeber"
+                android:text="Log off current staff memeber from shift"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView141" />
 
@@ -302,7 +302,7 @@
         <Button
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:text="start transaction"
+            android:text="start sales"
             android:id="@+id/buttonTransact"
             android:onClick="TenderAmount"
             android:textStyle="bold"
@@ -317,19 +317,20 @@
             android:layout_gravity="center"
             android:layout_weight="1"
             android:id="@+id/endshiftlayout">
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:src="@drawable/info"
-                android:id="@+id/imageView7" />
+                android:id="@+id/imageView5112" />
+
             <TextView
                 style="@style/smallwordtext"
-                android:textColor="#ffffff"
-                android:text="Close shift"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="Close current shift. This will close records associated with this shift. You will be able to view all transaction via your online report"
                 android:layout_height="wrap_content"
-                android:id="@+id/closeshifttext"
-
-                />
+                android:id="@+id/closeshifttext" />
 
         <Button
             android:layout_height="wrap_content"
@@ -337,7 +338,7 @@
             android:id="@+id/buttonEndShift"
             android:onClick="CloseShift"
             android:gravity="center"
-            android:text="close shift"
+            android:text="close shift now"
             android:textStyle="bold"
              />
 
@@ -360,7 +361,7 @@
                 style="@style/smallwordtext"
                 android:textColor="#000000"
                 android:textStyle="bold"
-                android:text="Open a new shift."
+                android:text="Open a new shift. All transactions will be linked to this shift."
                 android:layout_height="wrap_content"
                 android:id="@+id/textView1111" />
 
@@ -417,6 +418,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
         android:layout_alignParentBottom="true">
 
         <LinearLayout
@@ -428,6 +430,7 @@
 
             <Button
                 android:text="Set Event"
+                android:background="@drawable/buttonstate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/GoToSetEvenBtn"
@@ -435,7 +438,7 @@
                 android:onClick="GoToSetEvent"
                 android:textStyle="bold"
                 android:textSize="8dp"
-                />
+                android:layout_margin="2dp" />
 
             <Button
                 android:text="Add Staff"
@@ -446,7 +449,8 @@
                 android:onClick="GoToToAddStaff"
                 android:textStyle="bold"
                 android:textSize="8dp"
-                />
+                android:background="@drawable/buttonstate"
+                android:layout_margin="2dp" />
 
             <Button
                 android:text="Start Shift"
@@ -457,7 +461,8 @@
                 android:onClick="GoToStartShift"
                 android:textStyle="bold"
                 android:textSize="8dp"
-                />
+                android:background="@drawable/buttonstate"
+                android:layout_margin="2dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -476,7 +481,8 @@
                 android:onClick="GoToStaffLogin"
                 android:textStyle="bold"
                 android:textSize="8dp"
-                />
+                android:background="@drawable/buttonstate"
+                android:layout_margin="2dp" />
 
             <Button
                 android:text="StartSale"
@@ -486,21 +492,23 @@
                 android:layout_weight="1"
                 android:onClick="GoToStartSale"
                 android:textStyle="bold"
-
+                android:background="@drawable/buttonstate"
                 android:textSize="8dp"
-                />
+                android:layout_margin="2dp" />
 
             <Button
-                android:text="Close Shift"
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/GoToCloseShiftBtn"
+                android:layout_width="match_parent"
+                android:id="@+id/stafflogoff"
+                android:onClick="stafflogouTNew"
+                android:text="Staff Logout"
+                android:gravity="center"
                 android:layout_weight="1"
-                android:onClick="GoToCloseShift"
                 android:textStyle="bold"
 
                 android:textSize="8dp"
-                />
+                android:background="@drawable/buttonstate"
+                android:layout_margin="2dp" />
 
         </LinearLayout>
 
@@ -512,18 +520,16 @@
             >
 
             <Button
-                android:layout_height="wrap_content"
+                android:text="Close Shift"
                 android:layout_width="match_parent"
-                android:id="@+id/stafflogoff"
-                android:onClick="stafflogouTNew"
-                android:text="Staff Logout"
-                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:id="@+id/GoToCloseShiftBtn"
                 android:layout_weight="1"
+                android:onClick="GoToCloseShift"
                 android:textStyle="bold"
-                android:textAllCaps="false"
+                android:background="@drawable/buttonstate"
                 android:textSize="8dp"
-
-                />
+                android:layout_margin="2dp" />
 
             <Button
                 android:layout_height="wrap_content"
@@ -534,9 +540,10 @@
                 android:gravity="center"
                 android:layout_weight="1"
                 android:textStyle="bold"
-                android:textAllCaps="false"
+
                 android:textSize="8dp"
-                />
+                android:background="@drawable/buttonstate"
+                android:layout_margin="2dp" />
 
 
             <Button
@@ -548,9 +555,10 @@
                 android:gravity="center"
                 android:layout_weight="1"
                 android:textStyle="bold"
-                android:textAllCaps="false"
+
                 android:textSize="8dp"
-                />
+                android:background="@drawable/buttonstate"
+                android:layout_margin="2dp" />
 
             </LinearLayout>
 
@@ -572,9 +580,10 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/previous"
                 android:layout_weight="1"
-                android:background="@drawable/buttonborder"
+                android:background="@drawable/buttonstate"
                 android:layout_margin="5dp"
-                android:textColor="#ffffff"/>
+                android:textColor="#ffffff"
+                />
 
             <Button
                 android:text="next"
@@ -582,7 +591,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/next"
                 android:layout_weight="1"
-                android:background="@drawable/buttonborder"
+                android:background="@drawable/buttonstate"
                 android:layout_margin="5dp"
                 android:textColor="#ffffff"/>
 
