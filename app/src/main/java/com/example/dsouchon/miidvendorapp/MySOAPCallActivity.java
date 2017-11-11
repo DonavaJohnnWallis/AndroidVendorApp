@@ -58,7 +58,7 @@ import org.ksoap2.transport.HttpTransportSE;
 
         //public  final String SOAP_ADDRESS = "http://demo.miid.co.zw/miidwebservice.asmx";
         //public  final String SOAP_ADDRESS = "http://training.miid.co.zw/miidwebservice.asmx";
-        public  final String SOAP_ADDRESS = "https://miid.co.za/miidwebservice.asmx";
+        public  final String SOAP_ADDRESS = "http://training.miid.co.za/miidwebservice.asmx";
        //public  final String SOAP_ADDRESS = "https://www.miid.co.za/miidwebservice.asmx";
 
         public MySOAPCallActivity()

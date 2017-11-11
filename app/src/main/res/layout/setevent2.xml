@@ -28,7 +28,7 @@
             style="@style/passwordtext"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Select event in the drop down list below. If you cannot find the event you are looking for please contact the event organiser and give him your vendor code."
+            android:text="Select an event in the drop down list below. If you cannot find the event you are looking for please contact the event organiser and give him your vendor code."
             android:textSize="15dp"
             android:id="@+id/textView4"
             android:layout_weight="1"

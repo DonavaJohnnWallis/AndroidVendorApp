@@ -1,8 +1,12 @@
 package com.example.dsouchon.miidvendorapp;
 
 import android.app.AlertDialog;
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
@@ -16,7 +20,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-
+import android.content.DialogInterface;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -50,43 +54,59 @@ public class VendorLogin1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.vendorlogin1);
+
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
 
 
-        //this llows the tutorial to only come up once when app has started
-        Boolean isFirstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
-                .getBoolean("isFirstRun", true);
 
-        if (isFirstRun) {
-            //show start activity
-
-            startActivity(new Intent(VendorLogin1.this, Pop.class));
-
-
-
+       // checks internet connectivity
+        if(!isConnected(VendorLogin1.this)) buildDialog(VendorLogin1.this).show();
+        else {
+            setContentView(R.layout.vendorlogin1);
         }
 
 
-        getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit()
-                .putBoolean("isFirstRun", false).commit();
+
+
+    }
+
+
+
+    public boolean isConnected(Context context) {
+
+        ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo netinfo = cm.getActiveNetworkInfo();
+
+        if (netinfo != null && netinfo.isConnectedOrConnecting()) {
+            android.net.NetworkInfo wifi = cm.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
+            android.net.NetworkInfo mobile = cm.getNetworkInfo(ConnectivityManager.TYPE_MOBILE);
+
+            if((mobile != null && mobile.isConnectedOrConnecting()) || (wifi != null && wifi.isConnectedOrConnecting())) return true;
+            else return false;
+        } else
+            return false;
+    }
 
 
 
 
+    public AlertDialog.Builder buildDialog(Context c) {
 
+        AlertDialog.Builder builder = new AlertDialog.Builder(c);
+        builder.setTitle("No Internet Connection");
+        builder.setMessage("You need to have Mobile Data or wifi to access this. Press ok to Exit");
 
+        builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
 
-
-        Button tutbtn =(Button) findViewById(R.id.tutorialbtn);
-        tutbtn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                startActivity(new Intent(VendorLogin1.this,Pop.class));
+            public void onClick(DialogInterface dialog, int which) {
+
+                finish();
             }
         });
 
+        return builder;
     }
 
 
@@ -129,13 +149,7 @@ public class VendorLogin1 extends AppCompatActivity {
                 startActivity(browserIntent);
                 break;
 
-            case R.id.action_tutorial:
-                //Toast.makeText(this, "Login selected", Toast.LENGTH_SHORT)
 
-                //.show();
-                Intent intent = new Intent(VendorLogin1.this, Pop.class );
-                startActivity(intent);
-                break;
         }
 
         return true;

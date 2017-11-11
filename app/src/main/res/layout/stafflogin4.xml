@@ -47,7 +47,6 @@
     </LinearLayout>
 
 
-
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -64,7 +63,7 @@
             android:id="@+id/imageView5" />
         <TextView
             style="@style/smallwordtext"
-            android:text="Use an existing staff ID and PIN to log a staff member onto current shift."
+            android:text="Use an existing staff ID and PIN to log a staff member into current shift."
             android:layout_height="wrap_content"
             android:id="@+id/seteventtext"
             android:textColor="#000000"
@@ -74,7 +73,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/editStaffCode"
-            android:textColorHint="#000000"
+            android:textColorHint="#8e8e8e"
             android:inputType="number"
             android:backgroundTint="#efefef"
             android:textColor="#000000"
@@ -89,7 +88,7 @@
             android:ems="10"
             android:id="@+id/editStaffPin"
             android:backgroundTint="#efefef"
-            android:textColorHint="#000000"
+            android:textColorHint="#8e8e8e"
             android:textColor="#000000"
             android:textStyle="bold"
             android:hint="Enter password"
@@ -111,8 +110,6 @@
             android:onClick="StaffLogin" />
 
     </LinearLayout>
-
-
 
 
 </LinearLayout>

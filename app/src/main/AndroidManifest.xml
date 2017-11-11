@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.dsouchon.miidvendorapp">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.NFC" />
 
     <uses-feature
@@ -89,10 +91,20 @@
             android:label="Close Shift" />
 
         <activity android:name=".Reset101"></activity>
-        <activity
-            android:name=".Pop"
-            android:theme="@style/AppTheme.CustomTheme"></activity>
+
         <activity android:name=".viewflipper"></activity>
+
+
+        <receiver
+            android:name="com.example.dsouchon.miidvendorapp.NetworkChangeReceiver"
+            android:label="NetworkChangeReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+
     </application>
 
 </manifest>

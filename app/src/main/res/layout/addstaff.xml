@@ -86,7 +86,7 @@
                 android:id="@+id/imageView5" />
             <TextView
                 style="@style/smallwordtext"
-                android:text="Enter new staff login details or continue to start a new shift. To reset Staff PIN use existing staff ID with new staff PIN"
+                android:text="Enter new staff login details or continue to start a new shift. To reset Staff PIN use existing staff ID with a new PIN"
                 android:layout_height="wrap_content"
                 android:id="@+id/seteventtext"
                 android:textColor="#000000"
@@ -104,7 +104,7 @@
                 android:backgroundTint="#efefef"
                 android:textColor="#000000"
                 android:textStyle="bold"
-                android:textColorHint="#000000"
+                android:textColorHint="#8e8e8e"
                 />
 
             <EditText
@@ -116,7 +116,7 @@
                 android:id="@+id/editStaffPin"
                 android:layout_row="4"
                 android:hint="Enter new staff PIN"
-                android:textColorHint="#000000"
+                android:textColorHint="#8e8e8e"
                 android:backgroundTint="#efefef"
                 android:textColor="#000000"
                 android:textStyle="bold"

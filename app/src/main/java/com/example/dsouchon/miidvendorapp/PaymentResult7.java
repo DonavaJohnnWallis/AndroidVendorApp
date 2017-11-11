@@ -12,7 +12,8 @@ import android.view.Menu;
 import android.view.MenuItem;
         import android.view.View;
 
-        import android.widget.TextView;
+import android.widget.EditText;
+import android.widget.TextView;
         import android.widget.Toast;
 
         import java.io.IOException;
@@ -51,12 +52,20 @@ public class PaymentResult7 extends AppCompatActivity {
                     mPlayer2 = MediaPlayer.create(this, R.raw.correct);
                     mPlayer2.start();
 
+                    TextView FailText2 = (TextView) findViewById(R.id.PassView);
+                    FailText2.setVisibility(View.VISIBLE);
+
 
                 } else {
 
                     MediaPlayer mPlayer2;
                     mPlayer2 = MediaPlayer.create(this, R.raw.alarm);
                     mPlayer2.start();
+
+                    TextView FailText = (TextView) findViewById(R.id.FailView);
+                    FailText.setVisibility(View.VISIBLE);
+
+
 
                 }
 

@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -61,9 +62,7 @@ public class CloseShift9  extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.clearpaymentbtn){
-            startActivity(new Intent(this,TenderAmount5.class));
-        }
+
 
         if (id == R.id.action_vendorLogin){
             startActivity(new Intent(this,MainActivity.class));
@@ -106,6 +105,10 @@ public class CloseShift9  extends AppCompatActivity {
 
             new CallSoapCloseShift9().execute(params);
 
+
+            Button buttonSetEvent = (Button)this.findViewById(R.id.buttonLogIn);
+            buttonSetEvent.setEnabled(false);
+
         } catch (Exception ex) {
             //code causing app to hang on s4
             //    ad.setTitle("Close Shift Error!"); 
@@ -147,7 +150,7 @@ public class CloseShift9  extends AppCompatActivity {
 
                     Local.write(getApplicationContext(), "LastScreenMessage", result);
                     final TextView lblResult = (TextView)findViewById(R.id.lblResult);
-                    lblResult.setText("Shift Closed Successfully. See printer for EOD report.");
+                    lblResult.setText("Shift Closed Successfully. See email for EOD report.");
                    // final TextView printerIP = (TextView)findViewById(R.id.txtPrinterIP);
 
                     //new PrintEODReport().execute(result.toString(), printerIP.getText().toString());
@@ -166,6 +169,15 @@ public class CloseShift9  extends AppCompatActivity {
                     mprogressbar = (ProgressBar) findViewById(R.id.progressbar);
                     mprogressbar.setVisibility(View.INVISIBLE);
 
+                    Button buttonSetEvent;
+                    buttonSetEvent = (Button)findViewById(R.id.buttonLogIn);
+                    buttonSetEvent.setEnabled(true);
+                    buttonSetEvent.setVisibility(View.INVISIBLE);
+
+                    Button finishshiftactivity;
+                    finishshiftactivity = (Button)findViewById(R.id.buttonMainMenu);
+                    finishshiftactivity.setVisibility(View.VISIBLE);
+
 
                 }
                 else
@@ -175,6 +187,18 @@ public class CloseShift9  extends AppCompatActivity {
                     ProgressBar mprogressbar;
                     mprogressbar = (ProgressBar) findViewById(R.id.progressbar);
                     mprogressbar.setVisibility(View.INVISIBLE);
+
+                    Button buttonSetEvent;
+                    buttonSetEvent = (Button)findViewById(R.id.buttonLogIn);
+                    buttonSetEvent.setVisibility(View.VISIBLE);
+
+                    Button finishshiftactivity;
+                    finishshiftactivity = (Button)findViewById(R.id.buttonMainMenu);
+                    finishshiftactivity.setVisibility(View.INVISIBLE);
+
+                    Button buttonSetEventTrue;
+                    buttonSetEventTrue = (Button)findViewById(R.id.buttonLogIn);
+                    buttonSetEventTrue.setEnabled(true);
 
                 }
             } catch (IOException e) {

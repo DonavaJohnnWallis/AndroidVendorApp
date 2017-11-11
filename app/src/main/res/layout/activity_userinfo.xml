@@ -94,7 +94,7 @@
                 android:layout_width="match_parent"
                 android:text="Scan Next Tag"
                 android:id="@+id/buttonScanTag"
-
+                android:background="@drawable/buttonstate_main"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:minHeight="50dp"

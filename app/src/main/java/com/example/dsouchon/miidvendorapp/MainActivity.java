@@ -1,6 +1,7 @@
 package com.example.dsouchon.miidvendorapp;
 
 import android.app.AlertDialog;
+import android.content.BroadcastReceiver;
 import android.content.pm.ActivityInfo;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
@@ -318,12 +319,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return false;
     }
 
+
+
    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_stafflogoff, menu);
         return true;
     }
+
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -356,13 +361,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent1 = new Intent(MainActivity.this, Reset101.class );
                 startActivity(intent1);
                 break;
-            case R.id.action_tutmenu:
-                //Toast.makeText(this, "Login selected", Toast.LENGTH_SHORT)
 
-                //.show();
-                Intent intent = new Intent(MainActivity.this, Pop.class );
-                startActivity(intent);
-                break;
         }
 
 
@@ -371,6 +370,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         //return super.onOptionsItemSelected(item);
     }
+
+
 
     public void stafflougoff(View view) {
 

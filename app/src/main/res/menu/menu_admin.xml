@@ -22,10 +22,7 @@
                 android:orderInCategory="3"
                 app:showAsAction="never" />
 
-    <item
-        android:id="@+id/action_tutorial"
-         android:title="@string/Tutorial"
-        android:orderInCategory="4" />
+
 
         </menu>
     </item>

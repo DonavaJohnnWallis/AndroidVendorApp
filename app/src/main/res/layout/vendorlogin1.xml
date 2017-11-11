@@ -9,6 +9,7 @@
     android:keepScreenOn="true">
 
 
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -49,7 +50,13 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         >
-
+        <TextView
+            style="@style/smallwordtext"
+            android:text="Enter Vendor PIN and Password."
+            android:layout_height="wrap_content"
+            android:id="@+id/seteventtext"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
 
 
 
@@ -65,7 +72,7 @@
             android:layout_column="0"
             android:hint="Enter Vendor Code"
             android:textColor="#000000"
-            android:textColorHint="#000000"
+            android:textColorHint="#8e8e8e"
             android:layout_margin="0dp"
             />
 
@@ -82,7 +89,7 @@
             android:hint="Enter Pin"
             android:textStyle="bold"
             android:textColor="#000000"
-            android:textColorHint="#000000"
+            android:textColorHint="#8e8e8e"
             android:layout_margin="0dp"
             android:fontFamily="sans-serif"
          />

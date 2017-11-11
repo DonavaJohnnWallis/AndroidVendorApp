@@ -141,7 +141,7 @@
                 style="@style/smallwordtext"
                 android:textColor="#000000"
                 android:textStyle="bold"
-                android:text="Select an option below. Available options will be highlighted. Set vendor PIN for more options."
+                android:text="Select an option below. Available options will be highlighted. Set Vendor PIN for more options."
                 android:layout_height="wrap_content"
                 android:id="@+id/textView111" />
 
@@ -165,7 +165,7 @@
                 style="@style/smallwordtext"
                 android:textColor="#000000"
                 android:textStyle="bold"
-                android:text="Select events that your vendor account has been linked to. Once you have set an event you will be able to add staff and start a shift."
+                android:text="Select an event that your vendor account has been linked to. Once you have an event set you will be able to add staff and start a shift."
                 android:layout_height="wrap_content"
                 android:id="@+id/seteventtext" />
 
@@ -230,7 +230,7 @@
                 style="@style/smallwordtext"
                 android:textColor="#000000"
                 android:textStyle="bold"
-                android:text="Use and exiting staff ID to log a staff member onto the current shift."
+                android:text="Use and existing staff ID to log a staff member into the current shift."
                 android:layout_height="wrap_content"
                 android:id="@+id/textView13" />
 
@@ -481,7 +481,7 @@
             >
 
             <Button
-                android:text="StaffLogin"
+                android:text="Staff Login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/GoToStaffLoginBtn"
@@ -493,7 +493,7 @@
                 android:layout_margin="2dp" />
 
             <Button
-                android:text="StartSale"
+                android:text="Start Sale"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/GoToStartSaleBtn"

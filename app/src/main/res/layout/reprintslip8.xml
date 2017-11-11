@@ -19,7 +19,8 @@
             android:text="REPRINT SLIP"
             android:id="@+id/btnRePrintSlip"
             android:onClick="ReprintSlip"
-            android:background="@drawable/ovalcornersfull"
+            android:background="@drawable/buttonstate_main"
+
             android:textColor="#ffffff"
             android:textSize="15dp"
 
@@ -44,7 +45,8 @@
             android:text="MAIN MENU"
             android:id="@+id/btnMainMenu"
             android:onClick="MainMenu"
-            android:background="@drawable/ovalcornersstroke"
+            android:background="@drawable/buttonstate_main"
+
             android:textColor="#ffffff"
             android:textSize="15dp"
 

@@ -27,8 +27,9 @@
     android:text="PRINT SLIP"
     android:id="@+id/btnPrint"
     android:onClick="print"
-    android:background="@drawable/ovalcornersfull"
-    android:textColor="#ffffff"
+        android:background="@drawable/buttonstate_main"
+
+        android:textColor="#ffffff"
     android:textSize="15dp"
     android:layout_marginTop="20dp"
     android:layout_marginRight="20dp"
@@ -41,7 +42,8 @@
         android:text="CONTINUE"
         android:id="@+id/btnMainMenu"
         android:onClick="MainMenu"
-        android:background="@drawable/ovalcornersstroke"
+        android:background="@drawable/buttonstate_main"
+
         android:textColor="#ffffff"
         android:textSize="15dp"
         android:layout_marginTop="20dp"

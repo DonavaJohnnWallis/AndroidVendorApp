@@ -37,21 +37,21 @@
              android:textStyle="bold"
             android:textSize="15dp"
             android:textColor="#000000"
-            android:background="@drawable/ovalcornersfull"
+            android:background="@drawable/buttonstate_main"
             android:layout_marginTop="40dp"
             android:onClick="CloseShift" />
 
         <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="BACK "
+            android:text="Finish "
             android:id="@+id/buttonMainMenu"
 
             android:layout_marginLeft="20dp"
 
             android:textSize="15dp"
             android:textColor="#fff"
-            android:background="@drawable/ovalcornersfull"
+            android:background="@drawable/buttonstate_main"
             android:layout_marginTop="40dp"
             android:onClick="MainMenu"
             android:visibility="gone"/>
