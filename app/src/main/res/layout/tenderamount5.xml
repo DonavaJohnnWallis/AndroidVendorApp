@@ -95,7 +95,8 @@
 
     <Button
         style="@style/buttonstyleleft"
-        android:background="@drawable/roundplain"
+        android:background="@drawable/buttonstate_main"
+
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:textColor="#000000"
@@ -110,7 +111,7 @@
 
     <Button
         style="@style/buttonstyle"
-        android:background="@drawable/roundplain"
+        android:background="@drawable/buttonstate_main"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:textColor="#000000"
@@ -123,7 +124,7 @@
          />
     <Button
         style="@style/buttonstyle"
-        android:background="@drawable/roundplain"
+        android:background="@drawable/buttonstate_main"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:textColor="#000000"
@@ -150,7 +151,7 @@
 
         <Button
             style="@style/buttonstyleleft"
-            android:background="@drawable/roundplain"
+            android:background="@drawable/buttonstate_main"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:textColor="#000000"
@@ -163,7 +164,7 @@
 
         <Button
             style="@style/buttonstyle"
-            android:background="@drawable/roundplain"
+            android:background="@drawable/buttonstate_main"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:textColor="#000000"
@@ -176,7 +177,7 @@
 
         <Button
             style="@style/buttonstyle"
-            android:background="@drawable/roundplain"
+            android:background="@drawable/buttonstate_main"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:textColor="#000000"
@@ -199,7 +200,7 @@
 
         <Button
             style="@style/buttonstyleleft"
-            android:background="@drawable/roundplain"
+            android:background="@drawable/buttonstate_main"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:textColor="#000000"
@@ -213,7 +214,7 @@
 
         <Button
             style="@style/buttonstyle"
-            android:background="@drawable/roundplain"
+            android:background="@drawable/buttonstate_main"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:textColor="#000000"
@@ -225,7 +226,7 @@
 
         <Button
             style="@style/buttonstyle"
-            android:background="@drawable/roundplain"
+            android:background="@drawable/buttonstate_main"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:textColor="#000000"
@@ -254,7 +255,7 @@
 
     <Button
         style="@style/buttonstyleleft"
-        android:background="@drawable/roundcounersfull"
+        android:background="@drawable/buttonstate_main"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:textColor="#000000"
@@ -269,7 +270,7 @@
 
     <Button
         style="@style/buttonstyle"
-        android:background="@drawable/roundcounersfull"
+        android:background="@drawable/buttonstate_main"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:textColor="#000000"
@@ -299,7 +300,7 @@
 
     <Button
         style="@style/buttonstyleleft"
-        android:background="@drawable/roundcouners"
+        android:background="@drawable/buttonstate_main"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:text="Clear"
@@ -312,7 +313,7 @@
 
         <Button
             style="@style/buttonstyle"
-            android:background="@drawable/roundcouners"
+            android:background="@drawable/buttonstate_main"
             android:layout_width="150dp"
             android:layout_height="50dp"
             android:text="Continue"

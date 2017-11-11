@@ -2,6 +2,6 @@
 
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_enabled="false" android:drawable="@drawable/active_no"/>
-
+    <item android:drawable="@drawable/active_pressed" android:state_pressed="true"/>
     <item android:state_enabled="true" android:drawable="@drawable/active"/> <!-- idle state -->
 </selector>

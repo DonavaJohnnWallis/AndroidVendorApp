@@ -170,7 +170,7 @@
                 android:id="@+id/seteventtext" />
 
             <Button
-
+                android:background="@drawable/buttonstate_main"
                 android:id="@+id/buttonManageEvents"
                 android:onClick="SetEvent"
                 android:text="Set Event Now"
@@ -203,6 +203,7 @@
                 android:id="@+id/textView12" />
 
         <Button
+            android:background="@drawable/buttonstate_main"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:text="Add a new ID now"
@@ -235,6 +236,7 @@
 
 
             <Button
+                android:background="@drawable/buttonstate_main"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:text="Staff Login"
@@ -254,6 +256,7 @@
             android:layout_weight="1"
             android:id="@+id/staffloginofflayout">
             <ImageView
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:src="@drawable/info"
@@ -268,6 +271,7 @@
 
 
             <Button
+                android:background="@drawable/buttonstate_main"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:id="@+id/stafflogoffbtn"
@@ -300,6 +304,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/textView14" />
         <Button
+            android:background="@drawable/buttonstate_main"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:text="start sales"
@@ -333,6 +338,7 @@
                 android:id="@+id/closeshifttext" />
 
         <Button
+            android:background="@drawable/buttonstate_main"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:id="@+id/buttonEndShift"
@@ -366,6 +372,7 @@
                 android:id="@+id/textView1111" />
 
             <Button
+                android:background="@drawable/buttonstate_main"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:text="start shift"
@@ -399,6 +406,7 @@
                 android:id="@+id/textView113" />
 
             <Button
+                android:background="@drawable/buttonstate_main"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:text="Continue"

@@ -5,14 +5,18 @@ import android.content.pm.ActivityInfo;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutCompat;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
 import android.content.Intent;
 import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ViewFlipper;
@@ -150,6 +154,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Boolean on = EnableButton("VendorLogin");
         buttonVendorLogin.setEnabled(on);
 
+
         Button buttonSetEvent = (Button)this.findViewById(R.id.buttonManageEvents);
         buttonSetEvent.setEnabled(EnableButton("SetEvent"));
         //disables child button
@@ -210,35 +215,65 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    //links child button to parent flipper layout
+    //links child button to parent flipper layout and contains animations
     public void GoToCloseShift(View view) {
         viewFlipper.setDisplayedChild(1);
         viewFlipper.setDisplayedChild(viewFlipper.indexOfChild(findViewById(R.id.endshiftlayout)));
+
+        //pop animation for layout
+        LinearLayout Layoutpop1 = (LinearLayout)this.findViewById(R.id.endshiftlayout);
+        Animation expandIn = AnimationUtils.loadAnimation(this, R.anim.expand_in);
+        Layoutpop1.startAnimation(expandIn);
     }
 
     public void GoToStaffLogin(View view) {
         viewFlipper.setDisplayedChild(2);
         viewFlipper.setDisplayedChild(viewFlipper.indexOfChild(findViewById(R.id.staffloginlayout)));
+
+        //pop animation for layout
+        LinearLayout Layoutpop2 = (LinearLayout)this.findViewById(R.id.staffloginlayout);
+        Animation expandIn = AnimationUtils.loadAnimation(this, R.anim.expand_in);
+        Layoutpop2.startAnimation(expandIn);
     }
 
     public void GoToStartSale(View view) {
         viewFlipper.setDisplayedChild(3);
         viewFlipper.setDisplayedChild(viewFlipper.indexOfChild(findViewById(R.id.tenderlayout)));
+
+        //pop animation for layout
+        LinearLayout Layoutpop3 = (LinearLayout)this.findViewById(R.id.tenderlayout);
+        Animation expandIn = AnimationUtils.loadAnimation(this, R.anim.expand_in);
+        Layoutpop3.startAnimation(expandIn);
     }
 
     public void GoToToAddStaff(View view) {
         viewFlipper.setDisplayedChild(5);
         viewFlipper.setDisplayedChild(viewFlipper.indexOfChild(findViewById(R.id.staffaddlayout)));
+
+        //pop animation for layout
+        LinearLayout Layoutpop4 = (LinearLayout)this.findViewById(R.id.staffaddlayout);
+        Animation expandIn = AnimationUtils.loadAnimation(this, R.anim.expand_in);
+        Layoutpop4.startAnimation(expandIn);
     }
 
     public void GoToStartShift(View view) {
         viewFlipper.setDisplayedChild(5);
         viewFlipper.setDisplayedChild(viewFlipper.indexOfChild(findViewById(R.id.startshiftlayout)));
+
+        //pop animation for layout
+        LinearLayout Layoutpop5 = (LinearLayout)this.findViewById(R.id.startshiftlayout);
+        Animation expandIn = AnimationUtils.loadAnimation(this, R.anim.expand_in);
+        Layoutpop5.startAnimation(expandIn);
     }
 
     public void GoToSetEvent(View view) {
         viewFlipper.setDisplayedChild(6);
         viewFlipper.setDisplayedChild(viewFlipper.indexOfChild(findViewById(R.id.seteventlayout)));
+
+        //pop animation for layout
+        LinearLayout Layoutpop6 = (LinearLayout)this.findViewById(R.id.seteventlayout);
+        Animation expandIn = AnimationUtils.loadAnimation(this, R.anim.expand_in);
+        Layoutpop6.startAnimation(expandIn);
     }
 
 
@@ -246,12 +281,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void stafflogouTNew(View view) {
         viewFlipper.setDisplayedChild(7);
         viewFlipper.setDisplayedChild(viewFlipper.indexOfChild(findViewById(R.id.staffloginofflayout)));
+
+        //pop animation for layout
+        LinearLayout Layoutpop7 = (LinearLayout)this.findViewById(R.id.staffloginofflayout);
+        Animation expandIn = AnimationUtils.loadAnimation(this, R.anim.expand_in);
+        Layoutpop7.startAnimation(expandIn);
     }
 
 
     public void Tagdetails(View view) {
         viewFlipper.setDisplayedChild(8);
         viewFlipper.setDisplayedChild(viewFlipper.indexOfChild(findViewById(R.id.TagDetailslayout)));
+
+        //pop animation for layout
+        LinearLayout Layoutpop8 = (LinearLayout)this.findViewById(R.id.TagDetailslayout);
+        Animation expandIn = AnimationUtils.loadAnimation(this, R.anim.expand_in);
+        Layoutpop8.startAnimation(expandIn);
     }
 
 

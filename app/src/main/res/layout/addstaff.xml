@@ -129,7 +129,8 @@
                 android:layout_height="wrap_content"
                 android:text="Confirm New Staff ID"
                 android:id="@+id/buttonAddStaff"
-                android:background="@drawable/ovalcornersfull"
+                android:background="@drawable/buttonstate_main"
+
                 android:textSize="15dp"
                 android:textColor="#000000"
                 android:textStyle="bold"
@@ -140,7 +141,8 @@
                 android:layout_height="wrap_content"
                 android:text=" Overwrite Staff PIN"
                 android:id="@+id/buttonOverwritePin"
-                android:background="@drawable/ovalcornersfull"
+                android:background="@drawable/buttonstate_main"
+
                 android:textSize="15dp"
                 android:textColor="#000000"
                 android:textStyle="bold"
@@ -153,7 +155,8 @@
                 android:layout_height="wrap_content"
                 android:text="Continue to new shift"
                 android:id="@+id/buttonMainMenu"
-                android:background="@drawable/ovalcornersfull"
+                android:background="@drawable/buttonstate_main"
+
                 android:textSize="15dp"
                 android:textColor="#000000"
                 android:textStyle="bold"
