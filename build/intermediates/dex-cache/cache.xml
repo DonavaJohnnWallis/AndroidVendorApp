@@ -3,21 +3,12 @@
 
     <item
         is-multidex="false"
-        jar="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.0.0/jars/classes.jar"
+        jar="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="0e8228b4bc69c6a2c8d7c18498a77e53417d2574">
-        <dex dex="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-plus-7.0.0_92ccbdefc42304c5f7fb0ddf2851f4866a0bee2c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="73ccb92b70112f2e463e415ef8d7275de7da6516">
-        <dex dex="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-location-7.0.0_73fadbab8e40dcb569efc50ca247f651b38bbba3.jar" />
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.1.1_ee45f967968f5aa382bbb2d5898225b4e0be1d88.jar" />
     </item>
     <item
         is-multidex="false"
@@ -30,12 +21,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.0.0/jars/classes.jar"
+        jar="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.0.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="29fd6d3794b71491c2789708cd8d03c71feb8954">
-        <dex dex="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-analytics-7.0.0_84f3ae6dc5594201863406d7cad3a886abccdf59.jar" />
+        sha1="c976518693e89ad44fbfccfc654941eaec198d08">
+        <dex dex="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-safetynet-7.0.0_9b057fecef50d271347f9ba38cf41b1e9e2ff562.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="055783146ba9654a725442563be78cad303aad1f">
+        <dex dex="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-games-7.0.0_a5cbdc48205f0973f018eb321567fc53fd5a06dd.jar" />
     </item>
     <item
         is-multidex="false"
@@ -48,30 +48,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.0.0/jars/classes.jar"
+        jar="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.0.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="055783146ba9654a725442563be78cad303aad1f">
-        <dex dex="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-games-7.0.0_f9189df9be726fb2c3928d90c4f59e8bad6f5315.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Donavan/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
-        <dex dex="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.1_febf8da84e26a3525102d8eea27bceee701f5106.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
-        <dex dex="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.1.1_43bdd659ab89321ae79dc0a573689a1d76f0e0fe.jar" />
+        sha1="ef5f051e7308febe289dc93c67c5f32785b4260a">
+        <dex dex="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-nearby-7.0.0_6503ae4d0c0dbf452d25da21a26fbebdeb568785.jar" />
     </item>
     <item
         is-multidex="false"
@@ -84,21 +66,21 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="41b3870cbe5fa546d8095b5b89d42cb69f3dd175">
+        <dex dex="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-drive-7.0.0_3255de783f01b7429db4600f17cabc4b33d5e7bc.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Volumes/Untitled/GitRepo/AndroidVendorApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.0.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="7ff613bf78ab057293892fdbd4169eda899c89b9">
         <dex dex="/Volumes/Untitled/GitRepo/AndroidVendorApp/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appstate-7.0.0_8601648b5fa11d213679612a5eed8f22cb99caa6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="7ff613bf78ab057293892fdbd4169eda899c89b9">
-        <dex dex="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appstate-7.0.0_67fb0e15d8f95a5ddba22bb5452e016cff32144e.jar" />
     </item>
     <item
         is-multidex="false"
@@ -120,21 +102,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.0.0/jars/classes.jar"
+        jar="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="3c0b099f9de16b265ecd6122fcb603e7d0d29f90">
-        <dex dex="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-fitness-7.0.0_907d7d9281a15619d94913bc20f0df6f76b38ae5.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="17f8750d5c0749e44dd7c54aa390d9c937803825">
-        <dex dex="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-7.0.0_f29447fc85d0baabc0c0727268eb4d2a2b7c81fa.jar" />
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.1.1_261dd1f348edec44f2aab73d768b1d4c679d4b12.jar" />
     </item>
     <item
         is-multidex="false"
@@ -147,12 +120,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.0.0/jars/classes.jar"
+        jar="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="3033cc3a2c68dff3e5b646d6d084bdbdf7d00b25">
-        <dex dex="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-wearable-7.0.0_e6a9d0e5c5e9c372a46cef1928a9cc2693059c1a.jar" />
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.1_6e87898fa701e080dbbbaf08b4d5297125aafde9.jar" />
     </item>
     <item
         is-multidex="false"
@@ -165,21 +138,39 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.0.0/jars/classes.jar"
+        jar="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.0.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="4cd0b093824b3228fffc21ea369b98d0b1db6566">
-        <dex dex="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-cast-7.0.0_3433d3992019c1d7f3534a30aba43ddb1c2a58c5.jar" />
+        sha1="a08d65794b844d8e7540bf9a33859bf3b2482d7f">
+        <dex dex="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appindexing-7.0.0_7221cae73c7e01c119d1bd13e168f6c7bd06bd26.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.0.0/jars/classes.jar"
+        jar="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="41b3870cbe5fa546d8095b5b89d42cb69f3dd175">
-        <dex dex="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-drive-7.0.0_26147a688c7f756a5f152c8c3c79867597f9a077.jar" />
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.1.1_f935d9832e679297c22bded3d2a2cd4b90294dfb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/2.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="031e8b3ab2df4ab43b1017f84417d7e10dfbb8d2">
+        <dex dex="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/pre-dexed/debug/de.hdodenhof-circleimageview-2.0.0_166986552040d97a07fc970934136859e7474bff.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3033cc3a2c68dff3e5b646d6d084bdbdf7d00b25">
+        <dex dex="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-wearable-7.0.0_46f8d177a736f07e62e97dbcc22178ea8ef79f1a.jar" />
     </item>
     <item
         is-multidex="false"
@@ -219,12 +210,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/jars/classes.jar"
+        jar="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.0.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
-        <dex dex="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.1.1_c75fab7a0acf7f2df4bb953c5c656b105b3c4b1a.jar" />
+        sha1="7ff613bf78ab057293892fdbd4169eda899c89b9">
+        <dex dex="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appstate-7.0.0_d110eee4874922df59ad519063bf83c836e85761.jar" />
     </item>
     <item
         is-multidex="false"
@@ -234,6 +225,15 @@
         revision="23.0.1"
         sha1="3c0b099f9de16b265ecd6122fcb603e7d0d29f90">
         <dex dex="/Volumes/Untitled/GitRepo/AndroidVendorApp/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-fitness-7.0.0_b72f522534c7b273f3065bc014e88ba04c46bc21.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.1_25e72cbfa5665a2782c176f427948334fcbf5315.jar" />
     </item>
     <item
         is-multidex="false"
@@ -255,15 +255,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
-        <dex dex="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.1.1_47b37eb05bafaba36c69ce99d034dd5fd1a54fa7.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Volumes/Untitled/GitRepo/AndroidVendorApp/app/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/2.0.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -273,39 +264,48 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/libs/CircleImageView-master/gradle/wrapper/gradle-wrapper.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d229475a85469cc6aab6348e8714bd1c1f833fb4">
-        <dex dex="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/pre-dexed/debug/gradle-wrapper_c658e7b8d083ecf4f13bf6b0f1f177c0af0153a1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/2.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="031e8b3ab2df4ab43b1017f84417d7e10dfbb8d2">
-        <dex dex="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/pre-dexed/debug/de.hdodenhof-circleimageview-2.0.0_b09b0d4dab0b03621d020f2359654767e7ce111c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="9224bc4c54ba95147c7eabd874573763c07cb6be">
-        <dex dex="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-gcm-7.0.0_7e116bbb1e437a7117010c5dc1a14ba62d9bd423.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.0.0/jars/classes.jar"
+        jar="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.0.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="fb04b12526b0073c7fb1ebb70c5842d82ee95596">
-        <dex dex="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-identity-7.0.0_e4d2fdbbe28dd8135fb5b940951485a2d1094784.jar" />
+        <dex dex="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-identity-7.0.0_88e7a2da9d2c89e2090214f9508c618c118018e9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a96b762bde4139de855735f175ec4d17dca55a6d">
+        <dex dex="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-wallet-7.0.0_be9e767038190755841e2ca81f229a96c681512b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="29fd6d3794b71491c2789708cd8d03c71feb8954">
+        <dex dex="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-analytics-7.0.0_70e880abf2f94ff82eacaef3f6301d91948d4a3e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="73ccb92b70112f2e463e415ef8d7275de7da6516">
+        <dex dex="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-location-7.0.0_a9d49cdc0195f0d564da7727226f50c20ad73c95.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Untitled/Git2017/AndroidVendorApp/app/libs/CircleImageView-master/gradle/wrapper/gradle-wrapper.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d229475a85469cc6aab6348e8714bd1c1f833fb4">
+        <dex dex="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/pre-dexed/debug/gradle-wrapper_df73dc94592132cadddd0b54fe7ecaa7aab58340.jar" />
     </item>
     <item
         is-multidex="false"
@@ -318,21 +318,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"
+        jar="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.0.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
-        <dex dex="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.1.1_13261e0bf0d1e378dde618446e489ea59e3128c1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="e3d791b42eaa90416cd0b2d2e608092794a3baa4">
-        <dex dex="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-ads-7.0.0_d1663e7242d502490e622723a77ea1217c0a5d03.jar" />
+        sha1="1c5a76debf0c2857ccad422c4a80ed785982f8df">
+        <dex dex="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-panorama-7.0.0_a6a1190a6462e0e3bb3bd538099ee4bd58263492.jar" />
     </item>
     <item
         is-multidex="false"
@@ -354,12 +345,30 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="0e8228b4bc69c6a2c8d7c18498a77e53417d2574">
+        <dex dex="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-plus-7.0.0_3f255fc69b72827d644027ff15e80c61ea06d9cf.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Volumes/Untitled/GitRepo/AndroidVendorApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="5c5699834e9722f1c288fea2de82725d078ba127">
         <dex dex="/Volumes/Untitled/GitRepo/AndroidVendorApp/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.1.1_108ed998d78c9a38a8d724e7456797614b48bdbc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="17f8750d5c0749e44dd7c54aa390d9c937803825">
+        <dex dex="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-7.0.0_2dd06ad61b43335dfbf400810bc54490281a48f3.jar" />
     </item>
     <item
         is-multidex="false"
@@ -372,6 +381,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Volumes/Untitled/Git2017/AndroidVendorApp/app/libs/ksoap2-android-assembly-3.4.0-jar-with-dependencies.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="45fbaab416fb5cff992e662d1f7a83786f084fc3">
+        <dex dex="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/pre-dexed/debug/ksoap2-android-assembly-3.4.0-jar-with-dependencies_6a1b27d4ea024188ceeb16869698dc4b291e9f75.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Volumes/Untitled/GitRepo/AndroidVendorApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.0.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -381,39 +399,57 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c976518693e89ad44fbfccfc654941eaec198d08">
-        <dex dex="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-safetynet-7.0.0_1d21246e99cd70f03a51c88863e084c778f50d19.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="a96b762bde4139de855735f175ec4d17dca55a6d">
-        <dex dex="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-wallet-7.0.0_fcb99edb938bfe48a7da34b9ca2029cccfa44c9b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="a08d65794b844d8e7540bf9a33859bf3b2482d7f">
-        <dex dex="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appindexing-7.0.0_e5c050b50839ca46e53dfeed5855e6d61124df01.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/jars/classes.jar"
+        jar="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="4c93d99d454c975536bbe3b42283eee847f03ea3">
-        <dex dex="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-7.0.0_801a344ff8c77ee8cff1932c58ac1246ab3e7dd1.jar" />
+        <dex dex="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-7.0.0_971b008daf402feb8de2d9060d95b7dd856346ff.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.1.1_6b8ce39eeb5759d7ec722183528f8be37879fe3b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3c0b099f9de16b265ecd6122fcb603e7d0d29f90">
+        <dex dex="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-fitness-7.0.0_00ea9d909ef4b926f875bacbbbe8902cfa127995.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="4cd0b093824b3228fffc21ea369b98d0b1db6566">
+        <dex dex="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-cast-7.0.0_4546eed630535ee4b1a3e5993971407f73c3dc02.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e3d791b42eaa90416cd0b2d2e608092794a3baa4">
+        <dex dex="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-ads-7.0.0_62e7da892183361c220fcb32fa0d3ccf1e2ac323.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9224bc4c54ba95147c7eabd874573763c07cb6be">
+        <dex dex="/Volumes/Untitled/Git2017/AndroidVendorApp/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-gcm-7.0.0_3936dedf2bd3805bdbcc2d3966f705dc1b209306.jar" />
     </item>
     <item
         is-multidex="false"
@@ -426,48 +462,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="1c5a76debf0c2857ccad422c4a80ed785982f8df">
-        <dex dex="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-panorama-7.0.0_7f1fe691e17fcddb98fa6a7cee965dbed908f1d5.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/libs/ksoap2-android-assembly-3.4.0-jar-with-dependencies.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="45fbaab416fb5cff992e662d1f7a83786f084fc3">
-        <dex dex="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/pre-dexed/debug/ksoap2-android-assembly-3.4.0-jar-with-dependencies_16332af506262a441bcefc68a306f23ec3cfe7e9.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Volumes/Untitled/GitRepo/AndroidVendorApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.0.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="ef5f051e7308febe289dc93c67c5f32785b4260a">
         <dex dex="/Volumes/Untitled/GitRepo/AndroidVendorApp/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-nearby-7.0.0_fa07fd7c59032867223b55e9a94fda74f2e189bc.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="ef5f051e7308febe289dc93c67c5f32785b4260a">
-        <dex dex="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-nearby-7.0.0_59a05a4aa4e2e1ece9bc15417a55127b2d5f1904.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
-        <dex dex="/Users/Donavan/Documents/untitled folder 2/android_repository/MiiD_Vendor_App/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.1_83e23b2c576b3af858777cdfecf7cb4dac1bd5c0.jar" />
     </item>
     <item
         is-multidex="false"

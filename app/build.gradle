@@ -35,4 +35,5 @@ dependencies {
     compile 'com.google.android.gms:play-services-gcm:7.0.0'
     compile files('libs/CircleImageView-master/gradle/wrapper/gradle-wrapper.jar')
     compile 'de.hdodenhof:circleimageview:2.0.0'
+
 }
